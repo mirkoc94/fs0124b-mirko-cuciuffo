@@ -11,6 +11,16 @@ main {
     text-align: center;
 }
 
+.ingredienti {
+    padding-bottom: 10px;
+    border-bottom: 1px solid aqua;
+}
+
+.consigli {
+    padding-bottom: 10px;
+    border-bottom: 1px solid aqua;
+}
+
 .logo-h {
     width: 200px;
 }
@@ -18,8 +28,7 @@ main {
 .div-h {
     background-color: rgb(247, 236, 223);
     height: 40px;
-    border-top: 100px;
-    border-top-color: rgb(133, 84, 20);
+    border-top: 1px solid rgb(133, 84, 20);
 }
 
 .div-h span {
