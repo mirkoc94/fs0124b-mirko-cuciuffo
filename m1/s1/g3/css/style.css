@@ -1,31 +1,29 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(238, 234, 227);
+}
+
+header {
+    text-align: center;
 }
 
 main {
-    padding: 0 900px;
+    padding: 0 800px;
+    text-align: center;
 }
 
 .logo-h {
-    padding: 0 900px;
     width: 200px;
 }
 
-#div-h {
-    margin-left: 0;
+.div-h {
     background-color: rgb(247, 236, 223);
     height: 40px;
     border-top: 100px;
     border-top-color: rgb(133, 84, 20);
 }
 
-#div-h span {
+.div-h span {
     font-weight: 600;
-}
-
-#div-h p {
-    padding: 0 900px;
 }
 
 h1 {
@@ -42,9 +40,10 @@ video {
 }
 
 aside {
-    padding: 0 900px;
+    padding: 0 800px;
+    text-align: center;
 }
 
 footer {
-    padding: 0 900px;
+    text-align: center;
 }
