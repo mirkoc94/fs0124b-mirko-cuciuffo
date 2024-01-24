@@ -1,0 +1,42 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(238, 234, 227);
+}
+
+main {
+    padding: 0 900px;
+}
+
+.logo-h {
+    padding: 0 900px;
+    width: 200px;
+}
+
+#div-h {
+    margin-left: 0;
+    background-color: rgb(247, 236, 223);
+    height: 40px;
+    border-top: 100px;
+    border-top-color: rgb(133, 84, 20);
+}
+
+#div-h span {
+    font-weight: 600;
+}
+
+#div-h p {
+    padding: 0 900px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.sottotitolo {
+    margin-top: 0;
+}
+
+video {
+    height: 500px;
+}
