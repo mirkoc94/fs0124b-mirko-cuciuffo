@@ -1,0 +1,179 @@
+/* IMPOSTAZIONI GENERALI */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-page {
+    background-image: url(../img/sfondo.png);
+}
+
+.container-page {
+    margin: 15px;
+}
+
+/* HEADER */
+
+header {
+    background-image: linear-gradient(to top, rgb(2, 113, 136), rgb(0, 153, 186));
+}
+
+.container-heading {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.logo {
+    width: 200px;
+}
+
+.colore-bianco {
+    color: white;
+    font-weight: 500;
+}
+
+.colore-bianco p {
+    padding: 20px 0;
+}
+
+.colore-bianco nav {
+    padding-bottom: 10px;
+}
+
+/* CONTAINER */
+
+.container {
+    margin: 20px 0;
+    padding: 10px;
+    border: solid black;
+    background-color: white;
+}
+
+/* MAIN */
+
+h1 {
+    padding: 20px 0 15px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+address {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.primo-p {
+    padding: 20px 0;
+}
+
+.primo-p span {
+    color: rgb(170, 32, 114);
+}
+
+.secondo-p {
+    padding-bottom: 20px;
+}
+
+ul {
+    padding: 0 0 30px 30px;
+    list-style-type: disc;
+    line-height: 25px;
+}
+
+ul span {
+    background-color: rgb(232, 227, 227);
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.due-p {
+    line-height: 20px;
+}
+
+.due-p span {
+    color: rgb(170, 32, 114);
+}
+
+ol {
+    padding: 20px 30px;
+    list-style-type: decimal;
+    line-height: 25px;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+.intro-tab {
+    font-size: 0.9em;
+    padding-bottom: 20px;
+}
+
+table {
+    border-bottom: 2px solid rgb(55, 105, 198);
+}
+
+caption {
+    font-weight: 600;
+}
+
+thead {
+    background-color: rgb(55, 105, 198);
+    color: white;
+}
+
+thead td {
+    border: 0.2px solid white;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: rgb(232, 227, 227);
+    border-top: 1px solid rgb(160, 160, 160);
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+/* FORM */
+
+.p-form {
+    padding: 25px 0;
+}
+
+.novita {
+    padding: 10px;
+    background-color: rgb(160, 160, 160);
+}
+
+.novita-p {
+    text-align: center;
+}
+
+.novita-p + p {
+    padding: 15px 0;
+}
+
+button {
+    color: white;
+    background-color: blue;
+}
+
+
+/* ELEMENTI NELL' ASIDE */
+
+.p-articoli {
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.articoli {
+    margin-top: 10px;
+    background-color: rgb(160, 160, 160);
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to top, rgb(2, 113, 136), rgb(0, 153, 186))
+}
