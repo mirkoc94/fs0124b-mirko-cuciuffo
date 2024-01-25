@@ -1,15 +1,10 @@
 /* IMPOSTAZIONI GENERALI */
 
 body {
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
-}
-
-.background-page {
     background-image: url(../img/sfondo.png);
-}
-
-.container-page {
-    margin: 15px;
+    background-position: center;
 }
 
 /* HEADER */
@@ -40,12 +35,17 @@ header {
     padding-bottom: 10px;
 }
 
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
 /* CONTAINER */
 
 .container {
     margin: 20px 0;
     padding: 10px;
-    border: solid black;
+    box-shadow: 0 3px 3px #444;
     background-color: white;
 }
 
@@ -75,13 +75,13 @@ address {
     padding-bottom: 20px;
 }
 
-ul {
+.ul-main {
     padding: 0 0 30px 30px;
     list-style-type: disc;
     line-height: 25px;
 }
 
-ul span {
+.ul-main span {
     background-color: rgb(232, 227, 227);
     border: 2px solid grey;
     border-radius: 5px;
@@ -116,6 +116,7 @@ table {
 
 caption {
     font-weight: 600;
+    font-style: italic;
 }
 
 thead {
@@ -123,25 +124,43 @@ thead {
     color: white;
 }
 
-thead td {
-    border: 0.2px solid white;
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
 }
+
+td {
+    border-bottom: 1px solid rgb(194, 192, 192) ;
+}
+
+
 
 tbody tr:nth-of-type(even) {
     background-color: rgb(232, 227, 227);
-    border-top: 1px solid rgb(160, 160, 160);
-    border-bottom: 1px solid rgb(160, 160, 160);
 }
 
 /* FORM */
+
+.video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
 
 .p-form {
     padding: 25px 0;
 }
 
+.p-form a{
+    color: rgb(0, 153, 186);
+    text-decoration: underline;
+}
+
 .novita {
     padding: 10px;
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(232, 227, 227);
 }
 
 .novita-p {
@@ -152,22 +171,50 @@ tbody tr:nth-of-type(even) {
     padding: 15px 0;
 }
 
+.email-space {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+
 button {
+    padding: 4px 7px;
+    border: 0;
     color: white;
-    background-color: blue;
+    background-color: rgb(55, 105, 198);
 }
 
 
 /* ELEMENTI NELL' ASIDE */
 
+aside {
+    margin-bottom: 25px;
+}
+
 .p-articoli {
+    text-align: center;
     font-weight: 600;
     margin: 20px 0;
 }
 
 .articoli {
+    border: 1px solid rgb(194, 192, 192);
     margin-top: 10px;
-    background-color: rgb(160, 160, 160);
+    padding: 15px;
+    background-color: rgb(232, 227, 227);
+}
+
+.articoli a {
+    color: rgb(0, 153, 186);
+}
+
+.categoria {
+    margin-top: 4px;
+}
+
+.data {
+    padding-top: 15px;
+    text-align: end;
 }
 
 /* FOOTER */
