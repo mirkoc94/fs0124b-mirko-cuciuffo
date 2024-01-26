@@ -1,0 +1,172 @@
+/* BODY */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+/* HEADER*/
+
+header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+header img {
+    padding: 30px;
+    width: 30%;
+}
+
+header div {
+    text-align: center;
+}
+
+/* MAIN */
+
+.titoli {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 20px 0;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+
+.introduzione {
+    padding: 30px 30px 40px 30px;
+    text-align: center;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.introduzione h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.introduzione p {
+    padding-bottom: 30px;
+}
+
+.introduzione a {
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: #f04c2f;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+}
+
+.img-container {
+    padding: 40px 40px;
+}
+
+.img-box {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.box-orange {
+    padding: 30px 0;
+    background-color: #e22d0e;
+    color: white;
+    text-align: center;
+}
+
+.box-orange h2 {
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.box-orange p {
+    font-style: italic;
+    padding: 20px;
+}
+
+.box-orange cite {
+    font-size: 1.4rem;
+}
+
+.box-orange address {
+    font-size: 1rem;
+}
+
+/* ASIDE */
+
+aside {
+    padding: 20px;
+}
+
+.div-aside {
+    border: 1px solid #dee1e3;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.img-aside {
+    max-width: 100%;
+}
+
+.div-aside a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #25a2c3;
+    text-decoration: none;
+}
+
+.div-aside p {
+    padding: 20px 20px 40px 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #25a2c3;
+    color: white;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+footer h3 {
+    padding-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.div-p {
+    margin: 20px 0 40px 0;
+}
+
+.indirizzi {
+    text-decoration: none underline;
+    color: white;
+}
+
+footer i {
+    margin: 0 4px;
+}
+
+hr {
+    width: 50%;
+}
+
+footer address {
+    margin-top: 40px;
+}
