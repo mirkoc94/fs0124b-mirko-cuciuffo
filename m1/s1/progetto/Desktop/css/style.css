@@ -29,7 +29,7 @@ header img {
 .titoli {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    padding: 20px 0;
+    padding: 15px 0;
     color: #25a2c3;
     line-height: 1.5;
 }
@@ -74,6 +74,8 @@ header img {
 }
 
 .container-titoli {
+    width: 430px;
+    height: 430px;
     display: inline-block;
     text-align: left;
 }
