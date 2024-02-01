@@ -43,7 +43,7 @@ console.log(crazyDiff(22))
 */
 
 function boundary(n) {
-    if (n>20 && n<=100 || n==400) {
+    if ((n>20 && n<=100) || n==400) {
 return true
     }else {
         return false
@@ -59,17 +59,15 @@ console.log(boundary(400));
  ritornare la stringa originale senza alterarla.
 */
 
-let strg = "ciao"
-function epify(strg) {
-    let parola = "EPICODE"
-    let addedParola = strg.padStart(1, parola)
-    if (strg != addedParola) {                                                    //rifare
-        return addedParola
-    } else {
-        return strg
+function epify(stringa) {
+    if (stringa.startsWith("EPICODE")) {
+        return stringa
+    }else{
+    return "EPICODE" + stringa
     }
 }
-console.log(epify(strg));
+console.log(epify(" ciao sono mirko"));
+console.log(epify("EPICODE sono mirko"));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -101,32 +99,40 @@ console.log(reverseString(stringa))
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-let dueParole = "aa bb"
-function upperFirst(dueParole) {
-    
-    for (let i=0 ; i < arrParole.length ; i++) {
-        let arrParole = dueParole.split(" ")
-        let firstL = arrParole[i].split("")
-        let maiuscola = arrParole[i][0].toUpperCase()
-    
-    return dueParole.join(" ")
-    console.log(upperFirst(dueParole))
+
+function upperFirst(stringa) {
+    let singolePar = stringa.split(" ")
+    let arrParole = []
+    for (let index = 0; index < singolePar.length; index++) {
+        let selectFirst = singolePar[index].charAt(0)
+        let firstUp = selectFirst.toUpperCase()
+        let restoParola = singolePar[index].slice(1)
+        let parolaIntera = firstUp + restoParola
+        arrParole.push(parolaIntera)
+    }
+    console.log(arrParole.join(" "))
 }
-}
+console.log(upperFirst("ciao sono mirko"))
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-let ennesimaStrg = "gatto"
-function cutString(ennesimaStrg) {
-    ennesimaStrg.slice(0, 1)
-    ennesimaStrg.slice(-1, 1)
+
+function cutString(stringa) {
+    return stringa.slice(1, stringa.length - 1)
 }
-console.log(cutString(ennesimaStrg))
+console.log(cutString("ciao sono mirko"))
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n) {
+    let arrCasuale = []
+    for (let index = 0; index < n; index++) {
+        arrCasuale.push(Math.floor(Math.random()*10))
+    }
+    return arrCasuale
+}
+console.log(giveMeRandom(5));
