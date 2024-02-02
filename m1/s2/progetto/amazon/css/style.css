@@ -1,1 +1,146 @@
-/* Your styles here */
+/* BODY */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header div {
+    background-color: rgb(34, 47, 63);
+    padding: 10px 0 10px 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    background-color: rgb(54, 71, 89);
+    padding: 5px 0 5px 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    display: inline-block;
+    color: white;
+    text-decoration: none
+}
+
+/* MAIN */
+
+main {
+    padding: 20px;
+    background-color: rgb(233, 237, 238);
+}
+
+.orange-box {
+    padding: 5px 0;
+    margin-bottom: 20px;
+    background-color: rgb(245, 102, 0);
+    text-align: center;
+}
+
+.orange-box h4 {
+    color: white;
+}
+
+.guides-panel {
+    padding: 70px 0 50px 0;
+    background-image: url(../images/bg-image.png);
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+.guides-panel h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.guides-panel p {
+    font-size: 1rem;
+}
+
+.perfect-gift {
+    padding: 15px;
+    background-color: white;
+}
+
+.titolo-gift h4 {
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+}
+
+.titolo-gift a {
+    color: rgb(15, 156, 180);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.img-gift {
+    text-align: center;
+}
+
+.img-container {
+    
+    padding: 20px 40px;
+    display: inline-block;
+    width: calc(100% / 5);
+    height: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 10px 0 rgb(214, 214, 214);
+}
+.section-shop {
+    margin-bottom: 20px;
+}
+
+.section-shop img{
+    width: 100%;
+}
+
+.link-section {
+    text-align: center;
+}
+
+.link-section p {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.link-section a {
+    color: rgb(15, 156, 180);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+.back-at {
+    padding: 10px;
+    background-color: rgb(54, 71, 89);
+    text-align: center;
+}
+
+.back-at a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+}
+
+.finale {
+    padding: 40px 0;
+    background-color: rgb(34, 47, 63);
+    text-align: center;
+}
+
+.finale img {
+    width: 100px
+}
