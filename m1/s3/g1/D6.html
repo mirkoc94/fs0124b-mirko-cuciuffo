@@ -83,31 +83,37 @@
       /* ESERCIZIO 1
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
-
-      let nuovoTitolo = document.getElementById('titolo')
+      
       const changeTitle = function () {
-        nuovoTitolo.innerText = 'ciao'
+        document.querySelector('h1').innerText = 'Nuovo titolo'
       }
-      changeTitle ()
+      changeTitle();
 
       /* ESERCIZIO 2
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
     */
-
-      let nuovaClasse = document.getElementById('titolo')
+      
       const addClassToTitle = function () {
-        nuovaClasse.className = 'myHeading'
+        document.querySelector('h1').className = 'myHeading'
       }
       addClassToTitle()
 
       /* ESERCIZIO 3
        Scrivi una funzione che cambi il testo dei p figli di un div
       */
-
+      /*
       let paraDiv = document.getElementsByTagName('p')
       const changePcontent = function () {
         for (let index = 0; index < paraDiv.length; index++) {
           paraDiv[index].innerText = 'nuovo testo dei paragrafi'
+        }
+      }
+      changePcontent()
+      */
+      const changePcontent = function (){
+        let tuttiP = document.querySelectorAll('div p')
+        for (let index = 0; index < tuttiP.length; index++) {
+          tuttiP[index].innerText = 'Nuovo testo paragrafo'
         }
       }
       changePcontent()
@@ -116,25 +122,24 @@
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
 
-     let tuttiLink = document.getElementsByTagName('a')
-     console.log(tuttiLink)
-     const changeUrls = function () {
-       for (let index = 0; index < tuttiLink.length; index++) {
-         let tranneUltimo = tuttiLink.pop()
-         console.log(tranneUltimo);
-        }
+      const changeUrls = function () {
+      let links = document.querySelectorAll('a:not(footer a)')
+      for (let index = 0; index < links.length; index++) {
+        links[index].href = 'https://www.google.com'
+      }
       }
       changeUrls()
-      
 
       /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
-    let secondList = document.getElementById('secondList')
     const addToTheSecond = function () {
-
+      let ul = document.getElementById('secondList')
+      let li = document.createElement('li')
+      ul.appendChild(li)
     }
+    addToTheSecond()
 
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
@@ -142,26 +147,46 @@
 
     
     const addParagraph = function () {
-
+      let div = document.querySelector('div')
+      let p = document.createElement('p')
+      p.innerText = 'ciao'
+      div.append(p)
       }
+      addParagraph()
 
       /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
     */
 
-      const hideFirstUl = function () {}
+      const hideFirstUl = function () {
+        document.querySelector('ul').remove()
+      }
+      hideFirstUl()
 
       /* ESERCIZIO 8 
        Scrivi una funzione che renda verde il background di ogni lista non ordinata
       */
 
-      const paintItGreen = function () {}
+      const paintItGreen = function () {
+        let allUl = document.querySelectorAll('ul')
+        for (let index = 0; index < allUl.length; index++) {
+          allUl[index].style.backgroundColor = 'green'
+        }
+      }
+      paintItGreen()
 
       /* ESERCIZIO 9
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
 
-      const makeItClickable = function () {}
+      const makeItClickable = function () {
+        let titolo = document.querySelector('h1')
+        titolo.addEventListener('click', function () {
+          let menoUltima = titolo.innerText.slice(0, -1)
+          titolo.innerText = menoUltima
+        })
+      }
+      makeItClickable()
 
       /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
