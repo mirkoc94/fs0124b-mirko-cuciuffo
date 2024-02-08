@@ -2,9 +2,9 @@
 
 let bottone = document.getElementById("bottone")
 
-let task = bottone.addEventListener('click', function (e) {
-    let div = e.createElement('div')
+bottone.addEventListener('click', function () {
+    let li = document.createElement('li')
     let toDo = document.getElementById('myInput').value
-    let valoreTesto = document.div.innerText(toDo)
-    div.appendChild(valoreTesto)
+    let valoreTesto = document.li.innerText(toDo)
+    li.appendChild(valoreTesto)
 })

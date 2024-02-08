@@ -1,0 +1,23 @@
+.titolo {
+    text-align: center;
+    width: 50%;
+    border: solid black;
+}
+
+#caselle {
+    width: 50%;
+    border: solid black;
+    flex-wrap: wrap;
+    display: flex
+}
+
+.number {
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% / 10);
+    text-align: center;
+}
+
+.random {
+    display: inline-block;
+}
