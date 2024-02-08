@@ -1,12 +1,8 @@
-.titolo {
-    text-align: center;
+#tabellone {
+    margin-bottom: 20px;
     width: 50%;
-    border: solid black;
-}
-
-#caselle {
-    width: 50%;
-    border: solid black;
+    border: solid blueviolet;
+    border-radius: 5px;
     flex-wrap: wrap;
     display: flex
 }
@@ -14,10 +10,29 @@
 .number {
     padding: 20px;
     box-sizing: border-box;
-    width: calc(100% / 10);
+    width: 10%;
     text-align: center;
+    border: solid rgb(179, 136, 219);
+    border-collapse: collapse;
+}
+
+.number.selectedNumber {
+    background-color: rgb(221, 221, 221);
+}
+
+#btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: blueviolet;
+    font-weight: 600;
+
 }
 
 .random {
     display: inline-block;
+    padding: 0 20px;
+    margin-left: 10px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
 }
