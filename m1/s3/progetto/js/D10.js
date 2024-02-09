@@ -293,12 +293,13 @@ function searchAndDivide(parola) {
   let match = []
   let unmatch = []
   for (let index = 0; index < movies.length; index++) { 
-    if (movies.filter(obj => obj.Title.includes(parola)))
+    if (movies.filter(obj => obj.Title.includes(parola))) {
       match.push(obj)
-  } else {
+    } else {
     unmatch.push(obj)
+    }
+    return {match, unmatch}
   }
-  return {return, unmatch}
 }
 console.log(searchAndDivide(parola));
 
