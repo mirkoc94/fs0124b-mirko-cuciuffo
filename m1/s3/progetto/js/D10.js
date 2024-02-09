@@ -289,15 +289,18 @@ function searchByTitle(movies, word) {
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
-/*function searchAndDivide(parola) {
+function searchAndDivide(parola) {
   let match = []
   let unmatch = []
-  for (let index = 0; index < movies.length; index++) {                   //fare
+  for (let index = 0; index < movies.length; index++) { 
     if (movies.filter(obj => obj.Title.includes(parola)))
-      match.push
+      match.push(obj)
+  } else {
+    unmatch.push(obj)
   }
+  return {return, unmatch}
 }
-*/
+console.log(searchAndDivide(parola));
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
