@@ -15,7 +15,7 @@ REGOLE
 
 a=10
 b=20
-let sum = a+b                                       //chiedere
+let sum = a+b 
 console.log(sum)
 
 /* ESERCIZIO B
