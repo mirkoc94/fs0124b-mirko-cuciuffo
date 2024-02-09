@@ -219,7 +219,7 @@ let obj = {
 let animale = "gatto"
 
 function deleteProp(obj, animale) {
-  for (let index = 0; index < obj.length; index++) {                   //rivedere
+  for (let index = 0; index < obj.length; index++) {
     if (obj[index] == animale) {
       delete obj[animale]
       return obj
