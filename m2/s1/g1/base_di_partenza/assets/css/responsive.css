@@ -1,0 +1,71 @@
+/* RESPONSIVE FOR TABLET*/
+
+@media screen and (min-width: 576px) {
+    table {
+        margin: 50px auto;
+    }
+    input {
+        width: 70%;
+    }
+}
+
+/* RESPONSIVE FOR DESKTOP */
+
+@media screen and (min-width: 1200px) {
+    header, main, footer {
+        margin: 0 auto;
+    }
+    .container {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    header {
+        padding: 1em 2em 1em 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+    header div img {
+        margin: 0;
+    }
+    #p-logo {
+        margin: 0;
+    }
+    main {
+        padding: 2em 1.5em
+    }
+    table {
+        width: 70%;
+    }
+    #videoInput-container {
+        display: flex;
+        flex-direction: row;
+    }
+    iframe {
+        width: 50%;
+    }
+    section {
+        border-radius: 20px;
+    }
+    #articoli-container {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border: none;
+    }
+    aside div {
+        width: calc(100% / 3);
+        margin: 0;
+    }
+    footer {
+        width: 90%;
+    }
+
+}
