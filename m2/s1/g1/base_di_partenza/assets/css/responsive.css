@@ -22,13 +22,11 @@
     header {
         padding: 0 2em;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
     #logo-container {
         display: flex;
-        flex-direction: row;
         align-items: center
     }
     header div img {
@@ -54,7 +52,6 @@
     }
     #videoInput-container {
         display: flex;
-        flex-direction: row;
     }
     iframe {
         width: 50%;
@@ -66,7 +63,6 @@
         padding: 0;
         width: 100%;
         display: flex;
-        flex-direction: row;
         border: none;
     }
     aside div {
