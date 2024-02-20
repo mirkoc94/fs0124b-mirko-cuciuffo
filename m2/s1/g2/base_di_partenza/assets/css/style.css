@@ -148,6 +148,7 @@ h1 span {
 #underscore {
   width: 100%;
   position: absolute;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 699px) {
