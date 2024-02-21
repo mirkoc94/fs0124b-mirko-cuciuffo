@@ -20,6 +20,7 @@
     justify-content: space-evenly;
 }
 .card-text {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

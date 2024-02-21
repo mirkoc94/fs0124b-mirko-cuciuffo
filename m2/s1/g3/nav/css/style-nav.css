@@ -1,22 +1,22 @@
 nav {
-    padding: 40px 15px;
+    padding: 40px 0;
     display: flex;
     background-color: #FBF7E3;
-    border-radius: 50px;
+    border-radius: 100px;
     justify-content: space-evenly;
     gap: 10px;
 }
 
 .link-container {
-    width: calc(100% / 5);
     background-color: #F3DF85;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+    border-radius: 100px;
+    flex: 1 0 calc(100%/6) - 10px;
 }
 nav:nth-child(3) {
-    flex-grow: 1;
+    flex: 2 0 calc(100%/7) - 10px;
 }
 nav a {
     display: flex;
