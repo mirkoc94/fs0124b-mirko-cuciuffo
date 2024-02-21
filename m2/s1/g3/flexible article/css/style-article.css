@@ -8,6 +8,7 @@
     justify-content: space-evenly;
 }
 .article h2 {
+    padding-top: 15px;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -15,15 +16,22 @@
     width: 100%;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
     .article {
         display: flex;
         flex-direction: row-reverse;
+        gap: 20px;
+    }
+    .img-container {
+        width: 50%;
     }
     .article img {
-        width: 50%;
+        width: 100%;
     }
     .article-description {
         width: 50%;
+    }
+    .article h2 {
+        padding: 20px 0;
     }
 }
