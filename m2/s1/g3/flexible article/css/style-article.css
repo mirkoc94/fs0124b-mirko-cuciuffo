@@ -1,0 +1,29 @@
+.article {
+    padding: 20px;
+    margin: 10px;
+    background-color: #FBF7E3;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.article h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.article img {
+    width: 100%;
+}
+
+@media screen and (min-width: 1200) {
+    .article {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .article img {
+        width: 50%;
+    }
+    .article-description {
+        width: 50%;
+    }
+}
