@@ -24,11 +24,19 @@
     color: #6A889C;
 }
 
+span {
+    perspective: 400px;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+}
+
 i {
     animation-name: scorri;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: normal;
     animation-delay: 1s;
 }
 
