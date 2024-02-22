@@ -1,0 +1,93 @@
+.board {
+    height: 500px;
+    padding: 25px 30px;
+
+    background-color: #666666;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+    perspective: 200px
+}
+
+.postit {
+    width: 20%;
+    height: 40%;
+    box-sizing: border-box;
+    padding: 0 40px;
+    gap: 15px;
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.527);
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    position: relative;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+p {
+    font-size: 1.6em;
+}
+
+.yellow {
+    background-image: linear-gradient(#F6F6C4 80%, rgb(134, 134, 134));
+    transform: rotate(-5deg);
+}
+.green {
+    background-image: linear-gradient(#C7F6C9 80%, rgb(134, 134, 134));
+    transform: rotate(6deg);
+}
+.postit:nth-child(4) {
+    transform: rotate(10deg);
+}
+.purple {
+    background-image: linear-gradient(#C5C5F0 80%, rgb(134, 134, 134));
+    transform: rotate(-7deg);
+}
+
+.postit:hover {
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.527)
+}
+
+.topsx:hover {
+    transform: translateZ(50px);
+    translate: 100px 50px;
+}
+.topsx-center:hover {
+    transform: translateZ(50px);
+    translate: 30px 50px;
+}
+.topdx-center:hover {
+    transform: translateZ(50px);
+    translate: -30px 50px;
+}
+.topdx:hover {
+    transform: translateZ(50px);
+    translate: -100px 50px;
+}
+.downsx:hover {
+    transform: translateZ(50px);
+    translate: 100px -15px;
+}
+.downsx-center:hover {
+    transform: translateZ(50px);
+    translate: 30px -15px;
+}
+.downdx-center:hover {
+    transform: translateZ(50px);
+    translate: -30px -15px;
+}
+.downdx:hover {
+    transform: translateZ(50px);
+    translate: -100px -15px;
+}
