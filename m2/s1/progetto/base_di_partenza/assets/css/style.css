@@ -24,6 +24,9 @@ header {
     background-color: #ffc017;
     border-bottom: 1px solid black;
 }
+.color-change {
+    background-color: white;
+}
 
 .logo {
     width: 100px;
