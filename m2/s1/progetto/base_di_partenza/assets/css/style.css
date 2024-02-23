@@ -26,6 +26,7 @@ header {
 }
 .color-change {
     background-color: white;
+    transition-duration: 0.5s;
 }
 
 .logo {

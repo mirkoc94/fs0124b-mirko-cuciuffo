@@ -5,9 +5,9 @@ console.dir(welcome)
 
 window.addEventListener('scroll',function(){
     let header = document.querySelector('header')
-    top = window.scrollY;
+    let top = window.scrollY;
     
-    if (top > 280) {
+    if (top > 260) {
         header.classList.add('color-change');
     } else {
         header.classList.remove('color-change');
