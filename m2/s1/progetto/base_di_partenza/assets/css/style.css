@@ -1,0 +1,303 @@
+/* GENERALE */
+
+button {
+    font-family: "Roboto", sans-serif;
+}
+
+/* BODY */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    padding: 15px 0;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+nav a{
+    font-size: 0.7em;
+    text-decoration: none;
+}
+nav button {
+padding: 10px 15px;
+
+    font-size: 0.7em;
+    font-weight: bold;
+    color: white;
+
+    background-color: black;
+
+    border-radius: 50px;
+    border: none;
+}
+
+/* MAIN */
+
+/* WELCOME */
+
+.welcome {
+    display: flex;
+    justify-content: flex-end;
+
+    height: 300px;
+
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+}
+
+.left-welcome {
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.left-welcome h3 {
+    font-size: 4.5em;
+    font-family: "Spectral", serif
+}
+.left-welcome button {
+    padding: 10px 35px;
+
+    font-size: 0.7em;
+    font-weight: bold;
+    color: white;
+
+    background-color: black;
+
+    border-radius: 50px;
+    border: none;
+}
+
+.right-welcome {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.right-welcome img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ASIDE */
+
+aside {
+    padding: 30px 200px;
+
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.titolo-aside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 0.9em;
+}
+.titolo-aside img {
+    width: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card {
+    width: 281px;
+
+    display: flex;
+    gap: 10px;
+}
+.number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #E7E7E7;
+}
+.card h2 {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.article-text {
+padding-top: 7px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.reference {
+    display: flex;
+    gap: 5px;
+}
+.reference img {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+}
+.card p, cite {
+    font-size: 0.8em;
+}
+
+/* ARTICLE-FOOTER */
+
+.article-footer {
+    padding: 30px 200px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ARTICLE-CONTAINER */
+
+.article-container {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+}
+.reference-article {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+.reference-article img {
+    width: 15px;
+    border-radius: 100%;
+}
+.text-article {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.reference-article p {
+    font-size: 0.6em;
+}
+.text-article h2 {
+    font-weight: bold;
+    font-size: 1em;
+}
+.text-article h2+p {
+    font-size: 0.8em;
+}
+.text-article cite {
+    font-size: 0.6em;
+}
+.text-article button {
+    padding: 4px 6px;
+
+    border: none;
+    border-radius: 50px;
+
+    font-size: 0.9em;
+}
+.full-cite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.half-cite {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.half-cite+img {
+    width: 15px;
+}
+
+.photo-article {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+.photo-article img {
+    width: 100%;
+    height: 90%;
+}
+
+/* RIGHT-MAIN */
+
+.right-main {
+    width: 30%;
+    height: 250px;
+}
+.link-container {
+    height: 75%;
+
+    border-bottom: 1px solid #E7E7E7;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+}
+.link-container div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.link-container h3 {
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.link-section button{
+    padding: 4px 6px;
+
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 50px;
+
+    font-size: 1em;
+}
+.link-container a {
+    text-decoration: none;
+    font-size: 0.6em;
+    color: #1a8917;
+}
+footer {
+    padding-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: 15%;
+
+    display: flex;
+
+    font-size: 0.6em;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
