@@ -2,6 +2,7 @@
 
 button {
     font-family: "Roboto", sans-serif;
+    color: #191919;
 }
 
 /* BODY */
@@ -239,7 +240,7 @@ padding-top: 7px;
     align-items: center;
     gap: 5px;
 }
-.half-cite+img {
+.bookmark {
     width: 15px;
 }
 
