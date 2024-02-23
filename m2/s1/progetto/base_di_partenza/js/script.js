@@ -5,12 +5,15 @@ console.dir(welcome)
 
 window.addEventListener('scroll',function(){
     let header = document.querySelector('header')
+    let button = document.querySelector('.nav-btn')
     let top = window.scrollY;
     
     if (top > 260) {
-        header.classList.add('color-change');
+        header.classList.add('white');
+        button.classList.add('green')
     } else {
-        header.classList.remove('color-change');
+        header.classList.remove('white');
+        button.classList.remove('green');
     }
 });
 

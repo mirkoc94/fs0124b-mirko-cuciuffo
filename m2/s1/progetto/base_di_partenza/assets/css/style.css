@@ -24,7 +24,7 @@ header {
     background-color: #ffc017;
     border-bottom: 1px solid black;
 }
-.color-change {
+.white {
     background-color: white;
     transition-duration: 0.5s;
 }
@@ -42,7 +42,7 @@ nav a{
     font-size: 0.7em;
     text-decoration: none;
 }
-nav button {
+.nav-btn {
 padding: 10px 15px;
 
     font-size: 0.7em;
@@ -53,6 +53,10 @@ padding: 10px 15px;
 
     border-radius: 50px;
     border: none;
+}
+.green {
+    background-color: #1a8917;
+    transition-duration: 0.5s;
 }
 
 /* MAIN */
