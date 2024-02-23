@@ -13,3 +13,14 @@ window.addEventListener('scroll',function(){
         header.classList.remove('color-change');
     }
 });
+
+window.addEventListener('scroll',function(){
+    let rightMain = document.querySelector('.right-main')
+    let top = window.scrollY;
+    
+    if (top > 60) {
+        rightMain.classList.add('sticky');
+    } else {
+        rightMain.classList.remove('sticky');
+    }
+});

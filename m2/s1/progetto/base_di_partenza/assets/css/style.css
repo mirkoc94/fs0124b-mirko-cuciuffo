@@ -256,6 +256,10 @@ padding-top: 7px;
     width: 30%;
     height: 250px;
 }
+.sticky {
+    position: sticky;
+    top: 80px;
+}
 .link-container {
     height: 75%;
 
