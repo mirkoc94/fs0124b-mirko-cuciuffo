@@ -18,6 +18,8 @@
 
     font-size: 0.8em;
     font-weight: bold;
+
+    position: relative;
 }
 
 .parole {
@@ -27,11 +29,13 @@
 span {
     perspective: 400px;
     transform-style: preserve-3d;
-    display: flex;
-    flex-direction: column;
 }
 
 i {
+    position: absolute;
+
+    opacity: 0;
+
     animation-name: scorri;
     animation-duration: 2s;
     animation-iteration-count: infinite;
