@@ -93,6 +93,8 @@ main button {
 }
 
 .main-right {
+  display: flex;
+  justify-content: end;
   width: 50%;
   position: relative;
 }
@@ -130,11 +132,13 @@ p {
 
 /* ASIDE */
 aside {
+  margin-top: 110px;
   display: flex;
   justify-content: space-evenly;
 }
 aside img {
   width: calc(25% - 10px);
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

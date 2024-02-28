@@ -55,6 +55,8 @@ main {
     width: 50%;
 }
 .main-right {
+    display: flex;
+    justify-content: end;
     width: 50%;
 
     position: relative;
@@ -91,10 +93,13 @@ p {
 /* ASIDE */
 
 aside {
+    margin-top: 110px;
     display: flex;
     justify-content: space-evenly;
     img {
         width: calc(100% / 4 - 10px);
+
+        border-radius: 10px;
     }
 }
 
