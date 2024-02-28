@@ -1,0 +1,100 @@
+@import 'reset';
+@import 'colori';
+@import 'font';
+@import 'spaziature';
+@import 'bottoni';
+@import 'mixins';
+@import 'animazioni';
+
+/* HEADER */
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 40px 100px;
+
+    background-color: map-get($colori , bg);
+}
+.logo {
+    @include coloreDinamico2(#640fc5);
+
+    font-size: map-get($font-size , logo);
+    font-weight: bold;
+}
+nav {
+    a {
+        color: map-get($colori , text);
+        font-size: map-get($font-size , aNav);
+    }
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 500px;
+    padding: 0 100px;
+
+    background-color: map-get($colori , bg);
+
+    button {
+        @include btn;
+
+        color: map-get($colori , text);
+        font-size: map-get($font-size , btn);
+    }
+}
+.main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    width: 50%;
+}
+.main-right {
+    width: 50%;
+
+    position: relative;
+    img {
+        max-width: 100%;
+        
+        position: absolute;
+        bottom: -90px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+}
+
+h1 {
+    color: map-get($colori , title);
+
+    font-size: map-get($font-size , title);
+    font-weight: bold;
+}
+p {
+    @include coloreDinamico(#640fc5);
+    font-size: map-get($font-size , text);
+}
+.btn1 {
+    background-color: map-get($colori , btn1);
+}
+.btn2 {
+    background-color: map-get($colori , btn2);
+}
+.btn3 {
+    background-color: map-get($colori , btn3);
+}
+
+/* ASIDE */
+
+aside {
+    display: flex;
+    justify-content: space-evenly;
+    img {
+        width: calc(100% / 4 - 10px);
+    }
+}
+

@@ -1,0 +1,31 @@
+@mixin coloreDinamico($coloreSfondo){
+    
+    background-color: $coloreSfondo;
+    
+    @if( lightness($coloreSfondo) > 50){
+
+        color: darken($coloreSfondo,20)
+        
+    }@else{
+        
+        color: lighten($coloreSfondo,30)
+
+    }
+
+}
+
+@mixin coloreDinamico2($coloreSfondo){
+    
+    background-color: $coloreSfondo;
+    
+    @if( lightness($coloreSfondo) > 40){
+
+        color: darken($coloreSfondo,40)
+        
+    }@else{
+        
+        color: lighten($coloreSfondo,30)
+
+    }
+
+}
