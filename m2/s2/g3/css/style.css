@@ -63,7 +63,11 @@ nav {
   font-weight: bold;
 }
 
-nav a {
+.links {
+  display: flex;
+  gap: 15px;
+}
+.links a {
   color: #f4f4f4;
   font-size: 0.8em;
 }

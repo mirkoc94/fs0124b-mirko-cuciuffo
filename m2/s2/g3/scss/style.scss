@@ -21,7 +21,9 @@ nav {
     font-size: map-get($font-size , logo);
     font-weight: bold;
 }
-nav {
+.links {
+    display: flex;
+    gap: 15px;
     a {
         color: map-get($colori , text);
         font-size: map-get($font-size , aNav);
