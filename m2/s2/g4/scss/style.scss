@@ -1,0 +1,34 @@
+@import './partials/_reset.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './partials/card';
+
+/* HEADER */
+
+.personal {
+    display: flex;
+    gap: 10px;
+
+    button {
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 100%;
+    }
+    .noti {
+        background-image: url(../node_modules/bootstrap-icons/icons/bell.svg);
+        background-position: center;
+        background-size: cover;
+    }
+    .profile {
+        background-image: url(../assets/avatar-1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* MAIN */
+
+.card-stripe {
+    @include card-stripe;
+}
