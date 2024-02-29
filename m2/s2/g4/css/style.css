@@ -11897,31 +11897,25 @@ textarea.form-control-lg {
   }
 }
 /* HEADER */
-.personal {
-  display: flex;
-  gap: 10px;
-}
-.personal button {
+button {
   padding: 0;
   width: 20px;
   height: 20px;
   border: none;
   border-radius: 100%;
 }
-.personal .noti {
-  background-image: url(../node_modules/bootstrap-icons/icons/bell.svg);
+
+.noti {
   background-position: center;
   background-size: cover;
 }
-.personal .profile {
+
+.profile {
   background-image: url(../assets/avatar-1.jpg);
   background-position: center;
   background-size: cover;
 }
 
 /* MAIN */
-.card-stripe {
-  height: 50px;
-}
 
 /*# sourceMappingURL=style.css.map */
