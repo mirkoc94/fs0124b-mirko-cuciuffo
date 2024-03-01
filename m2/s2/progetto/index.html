@@ -9,26 +9,31 @@
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
 </head>
 <body class="bg-dark text-light">
-    <header class="container-fluid px-5 mb-3">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                <img class="logo" src="./Netflix-assets/assets/netflix_logo.png" alt="">
-            </a>
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-light">Home</a></li>
-                <li><a href="#" class="nav-link px-2 link-light">TV Shows</a></li>
-                <li><a href="#" class="nav-link px-2 link-light">Movies</a></li>
-                <li><a href="#" class="nav-link px-2 link-light">Recently Added</a></li>
-                <li><a href="#" class="nav-link px-2 link-light">My List</a></li>
-            </ul>
-            <div class="panel d-flex align-items-center col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                <i class="bi bi-search"></i>
-                <span>KIDS</span>
-                <i class="bi bi-bell-fill"></i>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
             </div>
             <div class="dropdown text-end">
-                <a href="#" class="d-block link-body-emphasis text-decoration-none text-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="./Netflix-assets/assets/avatar.png" alt="mdo" width="32" height="32">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                 </a>
                 <ul class="dropdown-menu text-small">
                     <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -39,24 +44,22 @@
                 </ul>
             </div>
         </div>
-    </header>
-
+    /nav>
+    
     <div class="container-fluid px-5">
-        <div class="row justify-content-between align-items-center mb-3">
-            <div class="col-12 d-flex align-items-center">
-                <h2 class="tv-show col-12 my-0">TV Shows</h2>
-                <div class="col-12 dropdown">
-                    <button class="btn bg-black btn-outline-light rounded-0 dropdown-toggle py-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Genres
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
+        <div class="row justify-content-between align-items-center mb-3 gy-2">
+            <h2 class="col-12 my-0 d-flex justify-content-center">TV Shows</h2>
+            <div class="col-12 dropdown d-flex justify-content-center">
+                <button class="btn bg-black btn-outline-light rounded-0 dropdown-toggle py-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Genres
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
             </div>
-            <div class="page-view col-1 d-flex justify-content-end">
+            <div class="page-view col-12 d-flex justify-content-center">
                 <i class="bi bi-list px-2"></i>
                 <i class="bi bi-grid-fill px-2"></i>
             </div>
@@ -68,7 +71,7 @@
             <div>
                 <h2>Trending Now</h2>
             </div>
-            <div id="carouselExample" class="carousel slide container-fluid px-0">
+            <div id="carouselExample1" class="carousel slide container-fluid px-0">
                 <div class="carousel-inner">
                     <div class="carousel-item cycle active">
                         <div class="row gx-1">
@@ -91,11 +94,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -105,7 +108,7 @@
             <div>
                 <h2>Watch It Again</h2>
             </div>
-            <div id="carouselExample" class="carousel slide container-fluid px-0">
+            <div id="carouselExample2" class="carousel slide container-fluid px-0">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row gx-1">
@@ -128,11 +131,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -142,7 +145,7 @@
             <div>
                 <h2>New Releases</h2>
             </div>
-            <div id="carouselExample" class="carousel slide container-fluid px-0">
+            <div id="carouselExample3" class="carousel slide container-fluid px-0">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row gx-1">
@@ -165,11 +168,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
