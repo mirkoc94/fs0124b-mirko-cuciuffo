@@ -1,0 +1,43 @@
+/* HEADER */
+header {
+    font-size: 0.7em;
+}
+header i {
+    font-size: 1.2em;
+}
+.logo {
+    width: 100px;
+}
+.panel {
+    gap: 15px;
+}
+
+/* TV SHOWS */
+.page-view i {
+    font-size: 0.7em;
+
+    border: 1px solid white;
+}
+
+/* MAIN */
+.carousel-inner {
+    height: 100px;
+}
+.carousel-item {
+    height: 100%;
+}
+.tv-show {
+    font-size: 1.6em;
+}
+main h2 {
+    font-size: 1.2em;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 100px;
+    font-size: 0.6em;
+}
+footer i {
+    font-size: 1.6em;
+}
