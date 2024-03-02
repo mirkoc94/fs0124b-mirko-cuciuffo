@@ -6,10 +6,19 @@ header i {
     font-size: 1.2em;
 }
 .logo {
-    width: 100px;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        height: 50px;
+    }
 }
 .panel {
     gap: 15px;
+}
+.dropdown-menu[data-bs-popper] {
+    right: 0;
 }
 
 /* TV SHOWS */
