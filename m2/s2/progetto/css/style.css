@@ -1,6 +1,7 @@
 /* HEADER */
 header {
     font-size: 0.7em;
+    position: sticky;
 }
 header i {
     font-size: 1.2em;
@@ -12,6 +13,26 @@ header i {
 @media screen and (max-width: 576px) {
     nav {
         height: 50px;
+    }
+    button .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+@media screen and (min-width: 577px) {
+    nav {
+        height: 40px;
+    }
+}
+@media screen and (min-width: 992px) {
+    nav {
+        height: 60px;
+    }
+    .logo {
+        width: 90%;
+    }
+    .btn-container {
+        display: none;
     }
 }
 .panel {
