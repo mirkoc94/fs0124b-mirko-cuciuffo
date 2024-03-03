@@ -1,3 +1,5 @@
+/* HOME PAGE */
+
 /* HEADER */
 header {
     font-size: 0.7em;
@@ -9,7 +11,6 @@ header i {
 .logo {
     width: 100%;
 }
-
 @media screen and (max-width: 576px) {
     nav {
         height: 50px;
@@ -35,6 +36,11 @@ header i {
         display: none;
     }
 }
+@media screen and (min-width: 1200px) {
+    .navbar-nav {
+        font-size: 0.7em;
+    }
+}
 .panel {
     gap: 15px;
 }
@@ -57,6 +63,11 @@ header i {
 }
 .tv-shows {
     font-size: 1.5em;
+}
+@media screen and (min-width: 1200px) {
+    .tv-shows {
+        font-size: 1.2em;
+    }
 }
 
 /* MAIN */
@@ -97,36 +108,50 @@ footer {
     font-size: 1.6em;
 }
 
-/*
-<header class="container-fluid px-5 mb-3">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                <img class="logo" src="./Netflix-assets/assets/netflix_logo.png" alt="">
-            </a>
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-light">Home</a></li>
-                <li><a href="#" class="nav-link px-2 link-light">TV Shows</a></li>
-                <li><a href="#" class="nav-link px-2 link-light">Movies</a></li>
-                <li><a href="#" class="nav-link px-2 link-light">Recently Added</a></li>
-                <li><a href="#" class="nav-link px-2 link-light">My List</a></li>
-            </ul>
-            <div class="panel d-flex align-items-center col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                <i class="bi bi-search"></i>
-                <span>KIDS</span>
-                <i class="bi bi-bell-fill"></i>
-            </div>
-            <div class="dropdown text-end">
-                <a href="#" class="d-block link-body-emphasis text-decoration-none text-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="./Netflix-assets/assets/avatar.png" alt="mdo" width="32" height="32">
-                </a>
-                <ul class="dropdown-menu text-small">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-*/
+
+
+/* PROFILE PAGE */
+
+.avatar {
+    width: 100%;
+}
+@media screen and (max-width: 991px) {
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
+    .h2-pro {
+        display: flex;
+        justify-content: center;
+    }
+    .btn-container-pro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 992px) {
+    .main-pro {
+        padding: 100px 200px;
+    }
+    .h2-pro {
+        font-size: 3em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .main-pro {
+        padding: 100px 300px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .main-pro {
+        padding: 100px 350px;
+    }
+}
+
+
+.btn-container-pro {
+    display: flex;
+    justify-content: space-between;
+}
+

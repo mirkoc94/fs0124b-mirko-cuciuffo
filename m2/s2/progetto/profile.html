@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-dark text-light">
+    <nav class="container-fluid">
+        <div class="logo-container row mx-0">
+            <a href="/" class="col-5 col-sm-3 col-md-2 px-0">
+                <img class="logo" src="./Netflix-assets/assets/netflix_logo.png" alt="logo">
+            </a>
+        </div>
+    </nav>
+    
+    <main class="main-pro">
+    <form class="container-fluid px-5">
+        <div class="row py-2 mx-0">
+                <h2 class="h2-pro col-12 px-0">Edit Profile</h2>
+        </div>
+        <div class="row mx-0 border-bottom pb-4">
+                <div class="col-3 px-0">
+                    <img class="avatar" src="./Netflix-assets/assets/avatar.png">
+                </div>
+                <div class="col-9">
+                    <p class="bg-secondary ps-1">Strive Student</p>
+                    <div>
+                        <p>Language:</p>
+                        <select name="language" id="language-sel" class="bg-black text-light">
+                            <option value="">English</option>
+                            <option value="dog">Italiano</option>
+                            <option value="cat">Espanol</option>
+                        </select>
+                    </div>
+                </div>
+        </div>
+        <div class="row mx-0">
+                <div class="col-12 col-sm-9 offset-sm-3 border-bottom py-4">
+                    <p>Maturity Settings:</p>
+                    <p class="col-lg-6 bg-secondary">ALL MATURITY RATINGS</p>
+                    <p>Show titles of all maturity ratings for this profile</p>
+                    <button class="btn bg-dark btn-outline-secondary rounded-0 py-0 px-3">EDIT</button>
+                </div>
+        </div>
+        <div class="row mx-0 border-bottom py-4">
+            <div class="col-12 col-sm-9 offset-sm-3">
+                <p>Autoplay controls</p>
+                <div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input bg-dark rounded-0" id="same-address">
+                        <span>Autoplay next episode in a series on all devices</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" class="form-check-input bg-dark rounded-0" id="same-address">
+                    <span>Autoplay previews while browsing on all devices</span>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container-pro row pt-4 mx-0 g-2">
+            <button class="col-6 col-lg-2 btn bg-dark btn-outline-secondary rounded-0 py-0 px-3">SAVE</button>
+            <button class="col-6 col-lg-3 btn bg-dark btn-outline-secondary rounded-0 py-0 px-3">CANCEL</button>
+            <button class="col-6 col-lg-5 btn bg-dark btn-outline-secondary rounded-0 py-0 px-3">DELETE PROFILE</button>
+        </div>
+    </form>
+    </main>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
