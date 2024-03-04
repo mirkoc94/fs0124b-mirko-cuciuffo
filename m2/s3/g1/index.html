@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        //ESERCIZIO 1
+        
+        class User {
+            constructor (_firstName, _lastName, _age, _location) {
+                this.firstName = _firstName,
+                this.lastName = _lastName,
+                this.age = _age,
+                this.location = _location
+            }
+            confronto (a, b) {
+                if (a.age > b.age) {
+                    console.log('${a.firstName} ${a.lastName} e piu grande di ${b.firstName} ${b.lastName}');
+                } else {
+                    console.log('${a.firstName} ${a.lastName} e piu piccolo di ${b.firstName} ${b.lastName}');
+                }
+            }
+        }
+        
+        let p1 = new User ("Mario", "Rossi", 20, "Roma")
+        let p2 = new User ("Giuseppe", "Vivaldi", 50, "Torino")
+        
+
+        //ESERCIZIO 2
+
+        class Pet {
+            constructor (_petName, _ownerName) {
+            this.petName = _petName
+            this.ownerName = _ownerName
+            this.species = ['cane', 'gatto', 'uccello', 'pesce']
+            this.breed = ['pastore', 'husky', 'ragdoll', 'maine coon', 'rosso', 'palla']
+            this.createSelectElements();
+            }
+
+        createSelectElements () {
+            let form = document.querySelector('form')
+            this.species.forEach((element, i) => {
+                let specie = document.createElement('select');
+                selectElements.id = 'select-${i}';
+                element.forEach((optionValue, optionElement) =>)
+            })
+
+        }
+            specieList () {
+                let specieArr = new Pet
+    
+                for (let index = 0; index < Pet.species.length; index++) {
+                    specie.options[specie.options.length] = new Option(specie[index], index);
+                }
+            }
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
