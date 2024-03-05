@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: whitesmoke;">
+    <div style="display: flex;">
+        <div>
+            <input id="inputName" type="text" placeholder="Inserisci il tuo nome">
+            <p class="errore" style="display: none; color: red; margin-top: 5px; font-size: 0.5em;">Valore necessario</p>
+        </div>
+        <div>
+            <button id="save">Salva</button>
+            <button id="remove">Annulla</button>
+        </div>
+    </div>
+
+    <div id="timer">00:00:00</div>
+
+    <script>
+
+        // PRIMO ESERCIZIO
+
+        let btnSave = document.getElementById('save');
+        let btnRemove = document.getElementById('remove');
+        let errore = document.querySelector(".errore");
+
+        btnSave.addEventListener('click', showError)
+        function showError() {
+            let userName = document.getElementById('inputName').value
+            if (userName.trim() === "") {
+                errore.style.display = "block";
+            } else {
+                errore.style.display = "none";
+            }
+        }
+
+        btnSave.addEventListener('click', saveName)
+        function saveName() {
+            let inputName = document.getElementById('inputName')
+            let userName = inputName.value
+
+            localStorage.setItem("name", userName)
+            let savedValue = localStorage.getItem("name")
+        }
+
+        btnRemove.addEventListener("click", removeName)
+        function removeName() {
+            let removedValue = localStorage.removeItem("name")
+        }
+
+        // SECONDO ESERCIZIO
+
+    </script>
+</body>
+</html>
