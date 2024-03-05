@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body style="background-color: black; color: whitesmoke;">
+
+    <div id="fissaValore"></div>
     <div style="display: flex;">
         <div>
             <input id="inputName" type="text" placeholder="Inserisci il tuo nome">
@@ -17,41 +19,55 @@
         </div>
     </div>
 
-    <div id="timer">00:00:00</div>
+    <div id="timer"></div>
 
     <script>
 
         // PRIMO ESERCIZIO
 
-        let btnSave = document.getElementById('save');
-        let btnRemove = document.getElementById('remove');
-        let errore = document.querySelector(".errore");
-
-        btnSave.addEventListener('click', showError)
+        
+        function mostraValore() {
+            const divValore = document.getElementById("fissaValore");
+            let valoreSalvato = localStorage.getItem("name");
+            divValore.innerHTML = valoreSalvato;
+        }
+        window.onload = mostraValore;
+        
+        const errore = document.querySelector(".errore");
+        const btnSave = document.getElementById("save");
+        
+        btnSave.addEventListener("click", showError)
         function showError() {
-            let userName = document.getElementById('inputName').value
+            const userName = document.getElementById("inputName").value
             if (userName.trim() === "") {
                 errore.style.display = "block";
             } else {
                 errore.style.display = "none";
             }
         }
-
-        btnSave.addEventListener('click', saveName)
-        function saveName() {
-            let inputName = document.getElementById('inputName')
-            let userName = inputName.value
-
+        
+        btnSave.addEventListener("click", function() {
+            const userName = document.getElementById("inputName").value;
             localStorage.setItem("name", userName)
-            let savedValue = localStorage.getItem("name")
-        }
+        })
+        
+        const btnRemove = document.getElementById("remove");
 
-        btnRemove.addEventListener("click", removeName)
-        function removeName() {
-            let removedValue = localStorage.removeItem("name")
-        }
+        btnRemove.addEventListener("click", function() {
+            localStorage.removeItem("name")
+        })
+        
 
         // SECONDO ESERCIZIO
+
+        let n = sessionStorage.getItem("numero") || 0;  //se la parte di sinistra risulta null o undifined, ritorna la parte di destra --> COALESCENZA
+        const divTimer = document.getElementById("timer")
+        divTimer.innerHTML = n;
+        setInterval(function() {
+            n++;
+            sessionStorage.setItem("numero", n);
+            divTimer.innerHTML = n;
+        }, 1000)
 
     </script>
 </body>
