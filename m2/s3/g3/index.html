@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-1 text-end"><div class="dropdown text-end">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bag"></i>
+                </a>
+                <ul class="dropdown-menu text-small">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="showroom row">
+            
+        </div>
+    </main>
+
+    <script>
+
+        fetch('https://striveschool-api.herokuapp.com/books')
+        .then(response => response.json())
+        .then(libreria => {
+            
+            for(let libro of libreria) {
+
+                const riga = document.querySelector('.showroom')
+
+                let colonna = document.createElement('div')
+                colonna.classList.add('col-3')
+                riga.append(colonna)
+                
+                let card = document.createElement('div')
+                card.classList.add('card')
+                colonna.append(card)
+
+                let immagine = document.createElement('img')
+                immagine.classList.add('card-img-top')
+                immagine.src = libro.img
+                card.append(immagine)
+                
+                let cardBody = document.createElement('div')
+                cardBody.classList.add('card-body')
+                card.append(cardBody)
+
+                let title = document.createElement('h5')
+                title.classList.add('card-title')
+                title.innerText = libro.title
+                cardBody.append(title)
+
+                let prezzo = document.createElement('p')
+                prezzo.classList.add('card-text')
+                prezzo.innerText = libro.price
+                cardBody.append(prezzo)
+
+                let scarta = document.createElement('button')
+                scarta.classList.add('btn', 'btn-primary')
+                scarta.addEventListener('click', function () {
+                    colonna.classList.add('d-none')
+                })
+                scarta.innerText = 'Scarta'
+                cardBody.append(scarta)
+
+            }
+        })
+
+    </script>
+</body>
+</html>
