@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <main class="container-fluid">
+        <div class="showroom row">
+            
+        </div>
+    </main>
+
+    <script>
+
+        fetch('https://striveschool-api.herokuapp.com/api/product/',{
+                method:'POST',
+                headers:{
+                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5NjJkN2IxMTAwMTkwZTZkZGYiLCJpYXQiOjE3MDk4ODk2ODYsImV4cCI6MTcxMTA5OTI4Nn0.Ms-65vg0maL58ibQeKeoCy1NpvSF22TKOEGK5O36rP8",
+                    'Content-Type':'application/json'
+                }
+            })
+        .then(res => res.json())
+        .then(products => {
+            
+            for(let phone of products) {
+
+                const riga = document.querySelector('.showroom')
+
+                let colonna = document.createElement('div')
+                colonna.classList.add('col-3')
+                riga.append(colonna)
+                
+                let card = document.createElement('div')
+                card.classList.add('card')
+                colonna.append(card)
+
+                let immagine = document.createElement('img')
+                immagine.classList.add('card-img-top')
+                immagine.src = phone.imageUrl
+                card.append(immagine)
+                
+                let cardBody = document.createElement('div')
+                cardBody.classList.add('card-body')
+                card.append(cardBody)
+
+                let marca = document.createElement('h5')
+                marca.classList.add('card-title')
+                marca.innerText = phone.brand
+                cardBody.append(marca)
+
+                let nome = document.createElement('p')
+                nome.classList.add('card-text')
+                nome.innerText = phone.name
+                cardBody.append(nome)
+
+                let prezzo = document.createElement('p')
+                prezzo.classList.add('card-text')
+                prezzo.innerText = phone.price
+                cardBody.append(prezzo)
+
+                let descrizione = document.createElement('p')
+                descrizione.classList.add('card-text')
+                descrizione.innerText = phone.description
+                cardBody.append(descrizione)
+            }
+        })
+
+    </script>
+</body>
+</html>
