@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <div><a href="./back-office.html">Back-office</a></div>
 
     <main class="container-fluid">
         <div class="showroom row">
@@ -15,9 +16,10 @@
     </main>
 
     <script>
+        let url = new URLSearchParams(location.search)
+        let id = url.get('id')
 
         fetch('https://striveschool-api.herokuapp.com/api/product/',{
-                method:'POST',
                 headers:{
                     Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5NjJkN2IxMTAwMTkwZTZkZGYiLCJpYXQiOjE3MDk4ODk2ODYsImV4cCI6MTcxMTA5OTI4Nn0.Ms-65vg0maL58ibQeKeoCy1NpvSF22TKOEGK5O36rP8",
                     'Content-Type':'application/json'
@@ -58,31 +60,19 @@
                 cardBody.append(descrizione)
 
                 let edit = document.createElement('a')
-                edit.href = `edit.html?id=${phone.id}`
+                edit.classList.add('d-block')
+                edit.href = `edit.html?id=${phone._id}`
                 edit.innerText = 'Modifica'
                 cardBody.append(edit)
-                
-                let deleteBtn = document.createElement('button')
-                deleteBtn.classList.add('btn')
-                deleteBtn.innerText = 'Elimina'
-                cardBody.append(deleteBtn)
-                deleteBtn.addEventListener('click',function(){
-                    fetch(`https://striveschool-api.herokuapp.com/api/product/${phone.id}`,{
-                        method:'DELETE',
-                        headers:{
-                            Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5NjJkN2IxMTAwMTkwZTZkZGYiLCJpYXQiOjE3MDk4ODk2ODYsImV4cCI6MTcxMTA5OTI4Nn0.Ms-65vg0maL58ibQeKeoCy1NpvSF22TKOEGK5O36rP8",
-                            'Content-type':'application/json'
-                        }
-                    })
-                    .then(res => res.json())
-                    .then(pizzaEliminata => {
-                        deleteBtn.closest('.riga').remove()
-                    })
-                })
 
+                let details = document.createElement('a')
+                details.href = `dettaglio.html?id=${phone._id}`
+                details.innerText = 'Dettagli'
+                cardBody.append(details)
             }
         })
 
     </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

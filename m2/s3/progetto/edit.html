@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <div><a href="./index.html">Home</a></div>
     <h1>Edit Product</h1>
 
     <div class="container">
-        <form>
+        <form class="form-bo">
             <input type="text" id="name" required class="form-control" placeholder="Nome prodotto">
             <input type="text" id="brand" required class="form-control" placeholder="Modello">
             <input type="number" id="price" required class="form-control" placeholder="0$">
             <input type="text" id="imageUrl" required class="form-control" placeholder="url immagine">
             <input type="area-text" id="description" required class="form-control" placeholder="Descrizione">
-            <button id="reset" class="btn btn-success">Reset</button>
-            <button id="save" class="btn btn-success">Save</button>
+            <button class="btn btn-success">Reset</button>
+            <button type="submit" class="btn btn-success">Save</button>
+            <button type="submit" class="btn btn-danger">Delete</button>
         </form>
     </div>
 
@@ -27,7 +30,6 @@
         let id = url.get('id')
 
         fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
-                method:'POST',
                 headers:{
                     Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5NjJkN2IxMTAwMTkwZTZkZGYiLCJpYXQiOjE3MDk4ODk2ODYsImV4cCI6MTcxMTA5OTI4Nn0.Ms-65vg0maL58ibQeKeoCy1NpvSF22TKOEGK5O36rP8",
                     'Content-Type':'application/json'
@@ -42,7 +44,7 @@
             let imageUrl = document.querySelector('#imageUrl')
             let description = document.querySelector('#description')
             
-            name.value = phonbrand
+            name.value = phone.name
             brand.value = phone.brand
             price.value = phone.price
             imageUrl.value = phone.imageUrl
@@ -50,23 +52,23 @@
             
         })
 
-        const save =  document.querySelector('#save')
+        const formBo = document.querySelector('.form-bo')
 
-        save.addEventListener('click',function(e){
+        formBo.addEventListener('submit',function(e){
             e.preventDefault()
 
-            let name = document.querySelector('#name').value
-            let brand = document.querySelector('#brand').value
-            let price = document.querySelector('#price').value
-            let imageUrl = document.querySelector('#imageUrl').value
-            let description = document.querySelector('#description').value
+            let nameInput = document.querySelector('#name')
+            let brandInput = document.querySelector('#brand')
+            let priceInput = document.querySelector('#price')
+            let imageUrlInput = document.querySelector('#imageUrl')
+            let descriptionInput = document.querySelector('#description')
 
             let phone = {
-                name,
-                brand,
-                price,
-                imageUrl,
-                description
+                name : nameInput.value,
+                brand : brandInput.value,
+                price : priceInput.value,
+                imageUrl : imageUrlInput.value,
+                description : descriptionInput.value
             }
 
             fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
@@ -78,13 +80,50 @@
                 body:JSON.stringify(phone)
             })
             .then(res => res.json())
-            .then(res => {
+            .then(phone => {
 
                 location.href = 'index.html'
 
             })
 
         })
+
+        formBo.addEventListener('submit',function(e){
+            e.preventDefault()
+
+            let nameInput = document.querySelector('#name')
+            let brandInput = document.querySelector('#brand')
+            let priceInput = document.querySelector('#price')
+            let imageUrlInput = document.querySelector('#imageUrl')
+            let descriptionInput = document.querySelector('#description')
+
+            let phone = {
+                name : nameInput.value,
+                brand : brandInput.value,
+                price : priceInput.value,
+                imageUrl : imageUrlInput.value,
+                description : descriptionInput.value
+            }
+
+            fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
+                method:'DELETE',
+                headers:{
+                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5NjJkN2IxMTAwMTkwZTZkZGYiLCJpYXQiOjE3MDk4ODk2ODYsImV4cCI6MTcxMTA5OTI4Nn0.Ms-65vg0maL58ibQeKeoCy1NpvSF22TKOEGK5O36rP8",
+                    'Content-type':'application/json'
+                },
+                body:JSON.stringify(phone)
+            })
+            .then(res => res.json())
+            .then(phone => {
+
+                location.href = 'index.html'
+
+            })
+        })
+
+
     </script>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

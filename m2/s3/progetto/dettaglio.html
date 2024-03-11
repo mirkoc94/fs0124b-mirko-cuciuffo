@@ -7,17 +7,26 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <div><a href="./index.html">Home</a></div>
 
-    <main class="container-fluid">
-        <div class="showroom row">
-            
+    <div class="container">
+        <div class="card" style="width: 200px">
+            <img src="" class="card-img-top" style="width: 200px"/>
+            <div class="card-body">
+                <h3 class="card-text" id="brand"></h3>
+                <h3 class="card-title" id="name"></h3>
+                <p class="card-title" id="price"></p>
+                <p class="card-title" id="description"></p>
+            </div>
         </div>
-    </main>
+    </div>
 
     <script>
 
-        fetch('https://striveschool-api.herokuapp.com/api/product/',{
-                method:'POST',
+        let url = new URLSearchParams(location.search)
+        let id = url.get('id')
+
+        fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
                 headers:{
                     Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDg5NjJkN2IxMTAwMTkwZTZkZGYiLCJpYXQiOjE3MDk4ODk2ODYsImV4cCI6MTcxMTA5OTI4Nn0.Ms-65vg0maL58ibQeKeoCy1NpvSF22TKOEGK5O36rP8",
                     'Content-Type':'application/json'
@@ -25,50 +34,26 @@
             })
         .then(res => res.json())
         .then(products => {
-            
-            for(let phone of products) {
 
-                const riga = document.querySelector('.showroom')
+            let img = document.querySelector('.card-img-top')
+            img.src= products.imageUrl
+        
+            let brand = document.querySelector('#brand')
+            brand.innerText= products.brand
 
-                let colonna = document.createElement('div')
-                colonna.classList.add('col-3')
-                riga.append(colonna)
-                
-                let card = document.createElement('div')
-                card.classList.add('card')
-                colonna.append(card)
+            let name= document.querySelector('#name')
+            name.innerText= products.name
+        
+            let description = document.querySelector('#description')
+            description.innerText= products.description
 
-                let immagine = document.createElement('img')
-                immagine.classList.add('card-img-top')
-                immagine.src = phone.imageUrl
-                card.append(immagine)
-                
-                let cardBody = document.createElement('div')
-                cardBody.classList.add('card-body')
-                card.append(cardBody)
+            let price = document.querySelector('#price')
+            price.innerText= `${products.price}€`
 
-                let marca = document.createElement('h5')
-                marca.classList.add('card-title')
-                marca.innerText = phone.brand
-                cardBody.append(marca)
-
-                let nome = document.createElement('p')
-                nome.classList.add('card-text')
-                nome.innerText = phone.name
-                cardBody.append(nome)
-
-                let prezzo = document.createElement('p')
-                prezzo.classList.add('card-text')
-                prezzo.innerText = phone.price
-                cardBody.append(prezzo)
-
-                let descrizione = document.createElement('p')
-                descrizione.classList.add('card-text')
-                descrizione.innerText = phone.description
-                cardBody.append(descrizione)
-            }
         })
 
     </script>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
