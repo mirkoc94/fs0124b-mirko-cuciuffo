@@ -11,9 +11,9 @@ interface iSmartphone{
 class User implements iSmartphone{
     nome:string
     cognome:string
-    constructor(name:string, lastName:string) {
-        this.nome = name
-        this.cognome = lastName
+    constructor(nome:string, cognome:string) {
+        this.nome = nome
+        this.cognome = cognome
     }
     credito:number = 0
     numeroChiamate:number = 0
