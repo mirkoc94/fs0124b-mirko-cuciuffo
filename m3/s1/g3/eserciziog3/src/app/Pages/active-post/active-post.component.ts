@@ -15,11 +15,8 @@ export class ActivePostComponent {
 
   ngOnInit(){
 
-    this.postSvc.getActivePost().then(res => {
-
-      this.postArr = res;
-
-    })
+    this.postSvc.getActivePost()
+    .then(res => this.postArr = res)
 
   }
 
