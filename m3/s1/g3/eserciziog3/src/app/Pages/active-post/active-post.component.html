@@ -1,0 +1,8 @@
+<p>active-post works!</p>
+<div *ngFor="let post of postArr" class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.body}}.</p>
+    <p *ngFor="let tag of post.tags" class="card-text">{{tag}}.</p>
+  </div>
+</div>
