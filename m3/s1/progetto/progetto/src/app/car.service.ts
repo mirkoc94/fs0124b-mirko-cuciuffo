@@ -20,9 +20,9 @@ export class CarService {
     return this.getAllCars()
     .then(res => {
       for (let i = 0; i < n; i++) {
-        let random = Math.floor(Math.random() *this.carArr.length)
-        if (this.carArr[random].available) {
-          this.randArr.push(this.carArr[random])
+        let random = Math.floor(Math.random() *res.length)
+        if (res[random].available) {
+          this.randArr.push(res[random])
         }
       }
       return this.randArr
@@ -32,24 +32,6 @@ export class CarService {
   getCarsByBrand(marca:string):Promise<iCar[]> {
     return this.getAllCars()
     .then(res => res.filter(c => c.brand === marca))
-  }
-
-  getColorByAvailability():void {
-    this.getAllCars()
-    .then(res => {
-
-      let cardBody = document.getElementById('card-body');
-      if (cardBody) {
-        for (let i = 0; i < this.carArr.length; i++) {
-          if (this.carArr[i].available) {
-            cardBody.classList.add('bg-success')
-          } else {
-            cardBody.classList.add('bg-danger')
-          }
-        }
-      }
-
-    })
   }
 
 }

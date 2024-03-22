@@ -15,10 +15,9 @@ export class AudiComponent {
 
   ngOnInit() {
 
-    this.carSvc.getCarsByBrand('audi')
+    this.carSvc.getCarsByBrand("Audi")
     .then(res => this.carArr = res)
 
-    this.carSvc.getColorByAvailability()
   }
 
 }

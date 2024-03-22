@@ -15,10 +15,9 @@ export class FiatComponent {
 
   ngOnInit() {
 
-    this.carSvc.getCarsByBrand('fiat')
-    .then(res => this.carArr = res)
+  this.carSvc.getCarsByBrand("Fiat")
+  .then(res => this.carArr = res)
 
-    this.carSvc.getColorByAvailability()
   }
 
 }

@@ -15,13 +15,8 @@ export class HomeComponent {
   constructor(private carSvc:CarService){}
 
   ngOnInit() {
-    this.carSvc.getAllCars()
-    .then(res => this.carArr = res)
 
     this.carSvc.getRandomCar(2)
     .then(res => this.randArr = res)
-
-    this.carSvc.getColorByAvailability()
   }
-
 }

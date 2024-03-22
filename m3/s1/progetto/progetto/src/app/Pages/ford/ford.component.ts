@@ -15,11 +15,8 @@ export class FordComponent {
 
   ngOnInit() {
 
-    this.carSvc.getCarsByBrand('ford')
+    this.carSvc.getCarsByBrand("Ford")
     .then(res => this.carArr = res)
 
-    this.carSvc.getColorByAvailability()
-
   }
-
 }

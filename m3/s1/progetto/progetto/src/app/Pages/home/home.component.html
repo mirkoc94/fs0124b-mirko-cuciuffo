@@ -6,10 +6,10 @@
 </div>
 
 <h2>Le nostre Auto</h2>
-<div *ngIf="randArr" class="row">
-  <div *ngFor="let car of randArr" class="col-3 card">
+<div class="row">
+  <div *ngFor="let car of randArr" [ngClass]="car.available ? 'bg-success' : 'bg-danger'" class="col-3 card">
     <img [src]="car.modelImage" class="card-img-top" alt="auto">
-    <div id="card-body" class="card-body">
+    <div id="card-body" class="card-body" >
       <h5 class="card-title">{{car.brand}} {{car.model}}</h5>
       <p class="card-text">Anno: {{car.year}}</p>
       <p class="card-text">Prezzo: {{car.price}}</p>
@@ -17,4 +17,3 @@
     </div>
   </div>
 </div>
-{{randArr | json}}

@@ -1,6 +1,6 @@
 <h2>Le nostre Fiat</h2>
-<div *ngIf="carArr" class="row">
-  <div *ngFor="let car of carArr" class="col-3 card">
+<div *ngIf="carArr && carArr.length > 0" class="row">
+  <div *ngFor="let car of carArr" [ngClass]="car.available ? 'bg-success' : 'bg-danger'" class="col-3 card">
     <img [src]="car.modelImage" class="card-img-top" alt="auto">
     <div id="card-body" class="card-body">
       <h5 class="card-title">{{car.brand}} {{car.model}}</h5>
