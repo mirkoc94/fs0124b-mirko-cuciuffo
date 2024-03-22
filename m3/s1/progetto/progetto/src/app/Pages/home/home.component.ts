@@ -9,7 +9,6 @@ import { CarService } from '../../car.service';
 })
 export class HomeComponent {
 
-  carArr:iCar[] = [];
   randArr:iCar[] = [];
 
   constructor(private carSvc:CarService){}
@@ -18,5 +17,6 @@ export class HomeComponent {
 
     this.carSvc.getRandomCar(2)
     .then(res => this.randArr = res)
+
   }
 }
