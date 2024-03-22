@@ -1,0 +1,20 @@
+<h1>I nostri marchi</h1>
+<div class="row">
+  <img class="col-2" src="assets/loghi/fiat.png" alt="marca">
+  <img class="col-2" src="assets/loghi/ford.png" alt="marca">
+  <img class="col-2" src="assets/loghi/audi.png" alt="marca">
+</div>
+
+<h2>Le nostre Auto</h2>
+<div *ngIf="randArr" class="row">
+  <div *ngFor="let car of randArr" class="col-3 card">
+    <img [src]="car.modelImage" class="card-img-top" alt="auto">
+    <div id="card-body" class="card-body">
+      <h5 class="card-title">{{car.brand}} {{car.model}}</h5>
+      <p class="card-text">Anno: {{car.year}}</p>
+      <p class="card-text">Prezzo: {{car.price}}</p>
+      <button routerLink="/dettaglio" class="btn btn-primary">Dettaglio</button>
+    </div>
+  </div>
+</div>
+{{randArr | json}}
