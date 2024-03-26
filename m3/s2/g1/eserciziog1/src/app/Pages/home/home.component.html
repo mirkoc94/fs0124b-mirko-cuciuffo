@@ -1,24 +1,9 @@
 <div class="container">
 
   <h2>post in evidenza</h2>
-  <div *ngIf="postArr.length" class="card">
-    <div class="card-body">
-      <h5 class="card-title">{{postArr[0].title}}</h5>
-      <p class="card-text">{{postArr[0].body}}.</p>
-      <p *ngFor="let tag of postArr[0].tags" class="card-text">{{tag}}.</p>
-    </div>
-  </div>
 
-  <h2>potrebbe interessarti anche</h2>
-
-  <div class="row">
-    <div *ngFor="let i of randArr" class="col-3 card">
-      <div class="card-body">
-        <h5 class="card-title">{{i.title}}</h5>
-        <p class="card-text">{{i.body}}.</p>
-        <p *ngFor="let tag of i.tags" class="card-text">{{tag}}.</p>
-      </div>
-    </div>
+  <div *ngFor="let post of postArr">
+    <app-single-post [post]="post"></app-single-post>
   </div>
 
 </div>

@@ -8,7 +8,6 @@ import { ActivePostComponent } from './Pages/active-post/active-post.component';
 import { InactivePostComponent } from './Pages/inactive-post/inactive-post.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { Pagina404Component } from './Pages/pagina404/pagina404.component';
-import { SinglePostComponent } from './Components/single-post/single-post.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { SinglePostComponent } from './Components/single-post/single-post.compon
     ActivePostComponent,
     InactivePostComponent,
     HomeComponent,
-    Pagina404Component,
-    SinglePostComponent
+    Pagina404Component
   ],
   imports: [
     BrowserModule,

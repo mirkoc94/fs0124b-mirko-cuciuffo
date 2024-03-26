@@ -1,12 +1,5 @@
-import { Injectable } from '@angular/core';
-import { iPost } from './Models/post';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class PostService {
-
-  postArr:iPost[] = [
+{
+  "posts": [
     {
       "id": 1,
       "title": "His mother had always taught him",
@@ -247,21 +240,8 @@ export class PostService {
       "tags": ["american", "love", "fiction"],
       "active": true
     }
-  ]
-
-
-  constructor() {}
-
-  getAllPosts(): iPost[] {
-    return this.postArr
-  }
-
-  getActivePost(): iPost[] {
-    return this.postArr.filter(p => p.active)
-  }
-
-  getInactivePost(): iPost[] {
-    return this.postArr.filter(p => !p.active)
-  }
-
+  ],
+  "total": 150,
+  "skip": 0,
+  "limit": 30
 }

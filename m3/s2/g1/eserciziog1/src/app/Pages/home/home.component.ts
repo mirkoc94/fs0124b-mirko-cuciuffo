@@ -10,25 +10,11 @@ import { PostService } from '../../post.service';
 export class HomeComponent {
 
   postArr:iPost[] = [];
-  randArr:iPost[] = [];
 
-  constructor(private postSvc:PostService){}
+  constructor(private postSvc:PostService){
 
-  ngOnInit() {
+  this.postArr = this.postSvc.getAllPosts()
 
-    this.postSvc.getAllPosts()
-    .then(res => {
-
-      this.postArr = res;
-      this.getRandomPost()})
-
-  }
-
-  getRandomPost(){
-    for(let i = 0; i < 4; i++){
-      let random:number = Math.floor(Math.random() * this.postArr.length)
-      this.randArr.push(this.postArr[random])
-    }
   }
 
 }
