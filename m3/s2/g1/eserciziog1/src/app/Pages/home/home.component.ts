@@ -16,11 +16,19 @@ export class HomeComponent {
 
   ngOnInit() {
 
-  this.postSvc.getAllPosts()
-  .then(res => this.postArr = res)
+    this.postSvc.getAllPosts()
+    .then(res => {
 
-  this.postSvc.getRandomPost(4)
-  .then(res => this.randArr = res)
+      this.postArr = res;
+      this.getRandomPost()})
 
   }
+
+  getRandomPost(){
+    for(let i = 0; i < 4; i++){
+      let random:number = Math.floor(Math.random() * this.postArr.length)
+      this.randArr.push(this.postArr[random])
+    }
+  }
+
 }

@@ -1,4 +1,5 @@
 <div class="container">
+
   <h2>post in evidenza</h2>
   <div *ngIf="postArr.length" class="card">
     <div class="card-body">
@@ -11,13 +12,14 @@
   <h2>potrebbe interessarti anche</h2>
 
   <div class="row">
-    <div *ngFor="let post of randArr" class="col-3 card">
+    <div *ngFor="let i of randArr" class="col-3 card">
       <div class="card-body">
-        <h5 class="card-title">{{post.title}}</h5>
-        <p class="card-text">{{post.body}}.</p>
-        <p *ngFor="let tag of post.tags" class="card-text">{{tag}}.</p>
+        <h5 class="card-title">{{i.title}}</h5>
+        <p class="card-text">{{i.body}}.</p>
+        <p *ngFor="let tag of i.tags" class="card-text">{{tag}}.</p>
       </div>
     </div>
   </div>
+
 </div>
 
