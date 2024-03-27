@@ -1,0 +1,16 @@
+<div class="container">
+
+  <h2>post in evidenza</h2>
+
+  <div class="row">
+    <div *ngFor="let post of postArr" class="card col-3 m-2">
+      <app-single-post [post]="post">
+
+        <app-form (editPostEvent)="riceviModEvent($event)"></app-form>
+
+      </app-single-post>
+    </div>
+  </div>
+
+</div>
+

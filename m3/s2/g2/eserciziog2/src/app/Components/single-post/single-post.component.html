@@ -1,0 +1,5 @@
+<div class="card-body">
+  <h5 class="card-title">{{post.title}}</h5>
+  <p class="card-text">{{post.body}}.</p>
+  <p *ngFor="let tag of post.tags" class="card-text">{{tag | uppercase}}.</p>
+</div>
