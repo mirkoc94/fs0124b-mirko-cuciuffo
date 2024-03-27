@@ -1,8 +1,7 @@
-<form>
+<form *ngFor="let post of postArr">
 
-  <input type="text" placeholder="titolo" name="title" #post-title>
-  <textarea type="text" placeholder="contenuto" name="body" #post-text></textarea>
-
+  <input type="text" placeholder="titolo" name="title" [(ngModel)]="post.title" #post_title>
+  <textarea type="text" placeholder="contenuto" name="body" [(ngModel)]="post.body" post_body></textarea>
   <button class="btn btn-success mt-2" (click)="editPost()">salva</button>
 
 </form>

@@ -8,7 +8,10 @@ import { iPost } from '../../Models/post';
 })
 
 export class SinglePostComponent {
+  postArr: iPost[] = []
 
   @Input() post!:iPost
+
+  riceviModEvent(value:string){}
 
 }

@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col" *ngFor="let prod of arrProd">
+
+    <div class="card">
+      <img [src]="prod.thumbnail" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{prod.title}}</h5>
+        <p class="card-text">{{prod.stock}}</p>
+        <p class="card-text">{{prod.rating}}</p>
+        <p class="card-text">{{prod.brand}}</p>
+        <p class="card-text">{{prod.price}}</p>
+        <button class="btn btn-primary">Preferiti</button>
+        <button class="btn btn-secondary">Carrello</button>
+      </div>
+    </div>
+
+  </div>
+</div>

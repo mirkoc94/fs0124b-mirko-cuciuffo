@@ -17,6 +17,4 @@ export class HomeComponent {
 
   }
 
-  riceviModEvent(value:string){}
-
 }
