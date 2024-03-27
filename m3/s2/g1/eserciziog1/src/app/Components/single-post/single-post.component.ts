@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { iPost } from '../../Models/post';
 
 @Component({
@@ -10,11 +10,5 @@ import { iPost } from '../../Models/post';
 export class SinglePostComponent {
 
   @Input() post!:iPost
-
-  constructor(){}
-
-  ngOnInit(): void {
-
-  }
 
 }

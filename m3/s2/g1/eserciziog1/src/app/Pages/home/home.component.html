@@ -3,7 +3,11 @@
   <h2>post in evidenza</h2>
 
   <div *ngFor="let post of postArr">
-    <app-single-post [post]="post"></app-single-post>
+    <app-single-post [post]="post">
+
+      <app-form (editPostEvent)="riceviModEvent($event)"></app-form>
+
+    </app-single-post>
   </div>
 
 </div>
