@@ -917,4 +917,8 @@ export class TodosService {
     return this.todos.filter((todo) => todo.completed);
   }
 
+  getUserId(userId:number) {
+    return this.todos.find(todo => todo.userId === userId)
+  }
+
 }

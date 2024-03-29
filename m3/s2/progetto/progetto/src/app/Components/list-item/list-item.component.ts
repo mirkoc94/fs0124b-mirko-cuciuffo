@@ -7,5 +7,7 @@ import { iTodo } from '../../Models/i-todo';
   styleUrl: './list-item.component.scss'
 })
 export class ListItemComponent {
+
   @Input() list!:iTodo
+
 }

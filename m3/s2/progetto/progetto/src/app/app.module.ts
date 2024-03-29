@@ -8,6 +8,8 @@ import { CardComponent } from './Components/card/card.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { CompletedComponent } from './Pages/completed/completed.component';
 import { UsersComponent } from './Pages/users/users.component';
+import { FormsModule } from '@angular/forms';
+import { MatchedUserComponent } from './Components/matched-user/matched-user.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { UsersComponent } from './Pages/users/users.component';
     CardComponent,
     HomeComponent,
     CompletedComponent,
-    UsersComponent
+    UsersComponent,
+    MatchedUserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
