@@ -17,12 +17,6 @@ export class MatchedUserComponent {
 
     this.matching()
 
-    //this.mappedId = this.userSvc.users.map(user => {
-    //  const matched = this.todosSvc.todos.find(todo => user.id === todo.userId);
-    //  return { ...user, ...matched };
-    //})
-    //console.log(this.mappedId);
-
   }
 
   matching() {
