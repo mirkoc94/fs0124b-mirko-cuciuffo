@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { iTodo } from '../../Models/i-todo';
 
 @Component({
   selector: 'app-list-item',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './list-item.component.scss'
 })
 export class ListItemComponent {
-
+  @Input() list!:iTodo
 }

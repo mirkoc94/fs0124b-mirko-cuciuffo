@@ -1,3 +1,5 @@
-<div>
-  <app-list-item></app-list-item>
+<div *ngFor="let l of todoArr">
+  <ul class="list-group">
+    <app-list-item [list]="l"></app-list-item>
+  </ul>
 </div>

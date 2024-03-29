@@ -809,4 +809,8 @@ export class UsersService {
     }
   ]
 
+  getAllUsers(): iUser[] {
+    return this.users
+  }
+
 }

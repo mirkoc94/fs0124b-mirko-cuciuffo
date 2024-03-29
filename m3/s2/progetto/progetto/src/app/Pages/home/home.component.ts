@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { iTodo } from '../../Models/i-todo';
+import { TodosService } from '../../Service/todos.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+  todoArr:iTodo[] = [];
+
+  constructor(private todoSvc:TodosService){}
+
+  ngOnInit(){
+    this.todoArr = this.todoSvc.getAllTodos()
+  }
 
 }

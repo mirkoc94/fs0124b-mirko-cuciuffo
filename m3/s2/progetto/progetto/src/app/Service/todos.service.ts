@@ -909,4 +909,12 @@ export class TodosService {
     }
   ]
 
+  getAllTodos(): iTodo[] {
+    return this.todos
+  }
+
+  getCompleted():iTodo[] {
+    return this.todos.filter((todo) => todo.completed);
+  }
+
 }
