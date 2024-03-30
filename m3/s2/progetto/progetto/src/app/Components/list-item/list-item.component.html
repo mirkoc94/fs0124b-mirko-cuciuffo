@@ -1,7 +1,4 @@
 <li class="list-group-item border my-2" [ngClass]="list.completed ? 'bg-success' : 'bg-danger'">
   <input class="form-check-input me-1" type="checkbox" [(ngModel)]="list.completed" value="" id="firstCheckbox">
   <label class="form-check-label" for="firstCheckbox">{{list.todo}}</label>
-  <div *ngFor="let lu of linkedId">
-  <app-matched-user [linkedUser]="lu"></app-matched-user>
-  </div>
 </li>

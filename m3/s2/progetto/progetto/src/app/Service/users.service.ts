@@ -1,5 +1,3 @@
-import { iTodo } from './../Models/i-todo';
-import { TodosService } from './todos.service';
 import { Injectable } from '@angular/core';
 import { iUser } from '../Models/i-user';
 

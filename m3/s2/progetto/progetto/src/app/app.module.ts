@@ -9,7 +9,6 @@ import { HomeComponent } from './Pages/home/home.component';
 import { CompletedComponent } from './Pages/completed/completed.component';
 import { UsersComponent } from './Pages/users/users.component';
 import { FormsModule } from '@angular/forms';
-import { MatchedUserComponent } from './Components/matched-user/matched-user.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { MatchedUserComponent } from './Components/matched-user/matched-user.com
     CardComponent,
     HomeComponent,
     CompletedComponent,
-    UsersComponent,
-    MatchedUserComponent
+    UsersComponent
   ],
   imports: [
     BrowserModule,
