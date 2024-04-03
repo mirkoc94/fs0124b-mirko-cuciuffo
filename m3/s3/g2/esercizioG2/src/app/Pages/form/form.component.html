@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+
+  <input type="text" formControlName="nome" class="form-control" placeholder="Nome">
+  <input type="text" formControlName="cognome" class="form-control" placeholder="Cognome">
+  <input type="password" formControlName="password" class="form-control" placeholder="Password">
+  <input type="password" formControlName="confermaPassword" class="form-control" placeholder="Conferma password">
+
+  <div class="form-group">
+    <div class="form-check" *ngFor="let g of generi">
+      <input [id]="g" [value]="g" type="radio" formControlName="genere" ngModel class="form-check-input form-control">
+      <label [for]="g">{{g}}</label>
+    </div>
+  </div>
+
+  <input type="file" formControlName="immagineProfilo" class="form-control" placeholder="Immagine profilo">
+  <input type="textarea" formControlName="biografia" class="form-control" placeholder="Biografia">
+  <input type="text" formControlName="username" class="form-control" placeholder="Username">
+
+</form>
