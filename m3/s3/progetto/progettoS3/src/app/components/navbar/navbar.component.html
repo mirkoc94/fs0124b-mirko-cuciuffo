@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" (click)="isMenuCollapsed = true">Home</a>
+        </li>
+        <li class="nav-item" *ngIf="isUserLoggedIn">
+          <a class="nav-link" routerLink="/dashboard" (click)="isMenuCollapsed = true">Dashboard</a>
+        </li>
+        <li ngbDropdown class="d-inline-block"  *ngIf="!isUserLoggedIn">
+          <a (click)="show = !show" type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>
+            Account
+          </a>
+          <ul ngbDropdownMenu aria-labelledby="dropdownBasic1" [ngClass]="{show}">
+            <li><a ngbDropdownItem>Profilo</a></li>
+            <li><hr ngbDropdownItem></li>
+            <li><button (click)="logout()" *ngIf="isUserLoggedIn" ngbDropdownItem class="btn btn-danger">Esci</button></li>
+          </ul>
+        </li>
+      </ul>
+      <a routerLink="/auth/login">Login</a>
+      <a routerLink="/auth/register">Register</a>
+    </div>
+  </div>
+</nav>
