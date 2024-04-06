@@ -1,0 +1,352 @@
+[
+  {
+      "id": 1,
+      "title": "Blade Runner",
+      "year": 1982,
+      "director": "Ridley Scott",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 2,
+      "title": "2001: A Space Odyssey",
+      "year": 1968,
+      "director": "Stanley Kubrick",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 3,
+      "title": "Interstellar",
+      "year": 2014,
+      "director": "Christopher Nolan",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 4,
+      "title": "The Matrix",
+      "year": 1999,
+      "director": "The Wachowskis",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 5,
+      "title": "E.T. the Extra-Terrestrial",
+      "year": 1982,
+      "director": "Steven Spielberg",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 6,
+      "title": "Inception",
+      "year": 2010,
+      "director": "Christopher Nolan",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 7,
+      "title": "Star Wars: Episode IV - A New Hope",
+      "year": 1977,
+      "director": "George Lucas",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 8,
+      "title": "Alien",
+      "year": 1979,
+      "director": "Ridley Scott",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 9,
+      "title": "Avatar",
+      "year": 2009,
+      "director": "James Cameron",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 10,
+      "title": "Star Trek",
+      "year": 2009,
+      "director": "J.J. Abrams",
+      "genre": "Science Fiction"
+  },
+  {
+    "id": 11,
+    "title": "The Terminator",
+    "year": 1984,
+    "director": "James Cameron",
+    "genre": "Science Fiction"
+  },
+  {
+      "id": 12,
+      "title": "Back to the Future",
+      "year": 1985,
+      "director": "Robert Zemeckis",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 13,
+      "title": "The Fifth Element",
+      "year": 1997,
+      "director": "Luc Besson",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 14,
+      "title": "Jurassic Park",
+      "year": 1993,
+      "director": "Steven Spielberg",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 15,
+      "title": "Close Encounters of the Third Kind",
+      "year": 1977,
+      "director": "Steven Spielberg",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 16,
+      "title": "The Martian",
+      "year": 2015,
+      "director": "Ridley Scott",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 17,
+      "title": "Minority Report",
+      "year": 2002,
+      "director": "Steven Spielberg",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 18,
+      "title": "District 9",
+      "year": 2009,
+      "director": "Neill Blomkamp",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 19,
+      "title": "Gravity",
+      "year": 2013,
+      "director": "Alfonso Cuarón",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 20,
+      "title": "The Day the Earth Stood Still",
+      "year": 1951,
+      "director": "Robert Wise",
+      "genre": "Science Fiction"
+  },
+  {
+    "id": 21,
+    "title": "Arrival",
+    "year": 2016,
+    "director": "Denis Villeneuve",
+    "genre": "Science Fiction"
+  },
+  {
+      "id": 22,
+      "title": "The Abyss",
+      "year": 1989,
+      "director": "James Cameron",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 23,
+      "title": "The Truman Show",
+      "year": 1998,
+      "director": "Peter Weir",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 24,
+      "title": "Edge of Tomorrow",
+      "year": 2014,
+      "director": "Doug Liman",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 25,
+      "title": "The Fly",
+      "year": 1986,
+      "director": "David Cronenberg",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 26,
+      "title": "The War of the Worlds",
+      "year": 1953,
+      "director": "Byron Haskin",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 27,
+      "title": "Looper",
+      "year": 2012,
+      "director": "Rian Johnson",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 28,
+      "title": "Donnie Darko",
+      "year": 2001,
+      "director": "Richard Kelly",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 29,
+      "title": "The Hunger Games",
+      "year": 2012,
+      "director": "Gary Ross",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 30,
+      "title": "Children of Men",
+      "year": 2006,
+      "director": "Alfonso Cuarón",
+      "genre": "Science Fiction"
+  },
+  {
+    "id": 31,
+    "title": "The Terminator 2: Judgment Day",
+    "year": 1991,
+    "director": "James Cameron",
+    "genre": "Science Fiction"
+  },
+  {
+      "id": 32,
+      "title": "Starship Troopers",
+      "year": 1997,
+      "director": "Paul Verhoeven",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 33,
+      "title": "In Time",
+      "year": 2011,
+      "director": "Andrew Niccol",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 34,
+      "title": "Prometheus",
+      "year": 2012,
+      "director": "Ridley Scott",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 35,
+      "title": "I Am Legend",
+      "year": 2007,
+      "director": "Francis Lawrence",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 36,
+      "title": "Snowpiercer",
+      "year": 2013,
+      "director": "Bong Joon-ho",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 37,
+      "title": "The Martian",
+      "year": 2015,
+      "director": "Ridley Scott",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 38,
+      "title": "The Day After Tomorrow",
+      "year": 2004,
+      "director": "Roland Emmerich",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 39,
+      "title": "Avatar",
+      "year": 2009,
+      "director": "James Cameron",
+      "genre": "Science Fiction"
+  },
+  {
+      "id": 40,
+      "title": "Predator",
+      "year": 1987,
+      "director": "John McTiernan",
+      "genre": "Science Fiction"
+  },
+  {
+    "id": 41,
+    "title": "Ex Machina",
+    "year": 2014,
+    "director": "Alex Garland",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 42,
+    "title": "Avatar",
+    "year": 2009,
+    "director": "James Cameron",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 43,
+    "title": "War for the Planet of the Apes",
+    "year": 2017,
+    "director": "Matt Reeves",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 44,
+    "title": "The Island",
+    "year": 2005,
+    "director": "Michael Bay",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 45,
+    "title": "Oblivion",
+    "year": 2013,
+    "director": "Joseph Kosinski",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 46,
+    "title": "A Clockwork Orange",
+    "year": 1971,
+    "director": "Stanley Kubrick",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 47,
+    "title": "The Hunger Games: Catching Fire",
+    "year": 2013,
+    "director": "Francis Lawrence",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 48,
+    "title": "I, Robot",
+    "year": 2004,
+    "director": "Alex Proyas",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 49,
+    "title": "Solaris",
+    "year": 1972,
+    "director": "Andrei Tarkovsky",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 50,
+    "title": "Ghost in the Shell",
+    "year": 1995,
+    "director": "Mamoru Oshii",
+    "genre": "Science Fiction"
+  }
+]

@@ -11,7 +11,7 @@ import { AuthService } from '../auth.service';
 export class LoginComponent {
 
   loginData:iLoginData = {
-    email:'',
+    email:'email@email.it',
     password:'password'
   }
 
@@ -20,12 +20,12 @@ export class LoginComponent {
     private router:Router
     ){}
 
-    signIn(){
+  signIn(){
 
-      this.authSvc.login(this.loginData)
-      .subscribe(data => {
-        this.router.navigate(['/dashboard'])
-      })
+    this.authSvc.login(this.loginData)
+    .subscribe(data => {
+      this.router.navigate(['/dashboard'])
+    })
 
-    }
+  }
 }

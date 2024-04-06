@@ -9,16 +9,19 @@
           <a class="nav-link" routerLink="/" (click)="isMenuCollapsed = true">Home</a>
         </li>
         <li class="nav-item" *ngIf="isUserLoggedIn">
+          <a class="nav-link" routerLink="/userList" (click)="isMenuCollapsed = true">Utenti</a>
+        </li>
+        <li class="nav-item" *ngIf="isUserLoggedIn">
           <a class="nav-link" routerLink="/dashboard" (click)="isMenuCollapsed = true">Dashboard</a>
         </li>
-        <li ngbDropdown class="d-inline-block"  *ngIf="!isUserLoggedIn">
+        <li ngbDropdown class="d-inline-block"  *ngIf="isUserLoggedIn">
           <a (click)="show = !show" type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>
             Account
           </a>
           <ul ngbDropdownMenu aria-labelledby="dropdownBasic1" [ngClass]="{show}">
-            <li><a ngbDropdownItem>Profilo</a></li>
+            <li><a ngbDropdownItem routerLink="/profile">Profilo</a></li>
             <li><hr ngbDropdownItem></li>
-            <li><button (click)="logout()" *ngIf="isUserLoggedIn" ngbDropdownItem class="btn btn-danger">Esci</button></li>
+            <li><button (click)="logout()" *ngIf="isUserLoggedIn" ngbDropdownItem class="btn btn-danger">Logout</button></li>
           </ul>
         </li>
       </ul>

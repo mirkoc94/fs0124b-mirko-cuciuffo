@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../auth/auth.service';
-import { iUser } from '../models/i-user';
+import { AuthService } from '../../auth/auth.service';
+import { iUser } from '../../models/i-user';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,7 +16,6 @@ export class DashboardComponent {
   ngOnInit(){
 
     this.authSvc.user$.subscribe(user => {
-
 
       this.user = user || undefined;
 

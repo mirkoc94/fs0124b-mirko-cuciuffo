@@ -1,4 +1,4 @@
-export interface iFilm {
+export interface iMovie {
   id:number
   title:string
   year:number
