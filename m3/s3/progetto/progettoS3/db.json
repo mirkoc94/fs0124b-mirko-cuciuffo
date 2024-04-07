@@ -389,6 +389,12 @@
       "password": "$2a$10$JwtBVwuE5RvtBWkVa.k9vedVNlIx.nmdo4EJNGj6i4sbLJQ03H2EW",
       "name": "Cum ad corrupti off",
       "id": 65
+    },
+    {
+      "email": "viqev@mailinator.com",
+      "password": "$2a$10$VkL9XeawE4OG7CU.egUZ9e.ot0Wtm5Ho5GROLbDatz.c0/L7gS9Ym",
+      "name": "Voluptas aperiam est",
+      "id": 66
     }
   ],
   "movies-popular": [

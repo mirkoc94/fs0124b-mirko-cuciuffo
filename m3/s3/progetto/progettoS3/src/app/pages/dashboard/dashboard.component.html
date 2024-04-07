@@ -1,1 +1,18 @@
 <h1>Benvenuto {{user?.name}}</h1>
+
+<hr>
+
+<h2>Lista film</h2>
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let m of moviesArr" class="card col-3">
+      <div class="card-body">
+        <h5 class="card-title">{{m.title}}</h5>
+        <p class="card-text">{{m.director}}</p>
+        <p class="card-text">{{m.year}}</p>
+        <a class="btn btn-primary"><i class="bi bi-star"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

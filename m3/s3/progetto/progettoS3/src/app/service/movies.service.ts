@@ -12,10 +12,10 @@ export class MoviesService {
     this.getAll().subscribe()
   }
 
-  apiUrl:string = environment.moviesUrl
+  moviesUrl:string = environment.moviesUrl
 
   getAll(){
-    return this.http.get<iMovie[]>(this.apiUrl)
+    return this.http.get<iMovie[]>(this.moviesUrl)
   }
 
 }

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../auth/auth.service';
 import { iUser } from '../../models/i-user';
+import { iMovie } from '../../models/i-movie';
+import { MoviesService } from '../../service/movies.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +11,9 @@ import { iUser } from '../../models/i-user';
 })
 export class DashboardComponent {
 
-  constructor(private authSvc:AuthService){}
+  moviesArr: iMovie[] = []
+
+  constructor(private authSvc:AuthService, private movieSvc:MoviesService){}
 
   user:iUser|undefined;
 
@@ -19,7 +23,10 @@ export class DashboardComponent {
 
       this.user = user || undefined;
 
+    this.movieSvc.getAll()
+
     })
+
   }
 
 }
