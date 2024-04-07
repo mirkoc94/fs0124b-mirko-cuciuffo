@@ -82,7 +82,6 @@ export class AuthService {
     const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
     const expMs = expDate.getTime() - new Date().getTime();
 
-
     setTimeout(()=>{
       this.logout()
     },expMs)
@@ -96,7 +95,6 @@ export class AuthService {
 
     const accessData:AccessData = JSON.parse(userJson)
     if(this.jwtHelper.isTokenExpired(accessData.accessToken)) return;
-
 
     this.authSubject.next(accessData.user)
     this.autoLogout(accessData.accessToken)

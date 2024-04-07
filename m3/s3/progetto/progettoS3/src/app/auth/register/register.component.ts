@@ -15,13 +15,13 @@ export class RegisterComponent {
   constructor(
     private authSvc:AuthService,
     private router:Router
-    ){}
+  ){}
 
   signUp(){
     this.authSvc.register(this.registerData)
     .subscribe(data => {
 
-      this.router.navigate(['dashboard'])
+      this.router.navigate(['/dashboard'])
 
     })
   }

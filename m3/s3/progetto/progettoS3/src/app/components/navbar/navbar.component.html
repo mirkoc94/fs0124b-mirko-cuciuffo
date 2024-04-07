@@ -25,8 +25,8 @@
           </ul>
         </li>
       </ul>
-      <a routerLink="/auth/login">Login</a>
-      <a routerLink="/auth/register">Register</a>
+      <a *ngIf="!isUserLoggedIn" routerLink="/auth/login">Login</a>
+      <a *ngIf="!isUserLoggedIn" routerLink="/auth/register">Register</a>
     </div>
   </div>
 </nav>

@@ -9,7 +9,7 @@ export class GuestGuard {
 
   constructor(
     private authSvc:AuthService,
-    private router:Router//per i redirect
+    private router:Router
   ){}
 
   canActivate(
