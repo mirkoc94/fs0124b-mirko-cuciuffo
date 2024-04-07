@@ -371,6 +371,24 @@
       "password": "$2a$10$OGf8EQdRViivBIaH7PIfkuDgxqDSOLaNvZb53EVNm2dSBMH8cmgKq",
       "name": "Eu qui eum itaque qu",
       "id": 62
+    },
+    {
+      "email": "cammelu@cammelu.it",
+      "password": "$2a$10$clV9jE8MWAQsSHdT2Y32J.kp8vdWC761BC/Iawl.WLz8UQfxDaVHO",
+      "name": "cammelu",
+      "id": 63
+    },
+    {
+      "email": "vabuqedyl@mailinator.com",
+      "password": "$2a$10$z/VYVOa3gaP/5EqtwDOyQ.Wha8yNC2cSAqKuPYpXQEEbAOLELfy4S",
+      "name": "Dolor quibusdam est ",
+      "id": 64
+    },
+    {
+      "email": "xecy@mailinator.com",
+      "password": "$2a$10$JwtBVwuE5RvtBWkVa.k9vedVNlIx.nmdo4EJNGj6i4sbLJQ03H2EW",
+      "name": "Cum ad corrupti off",
+      "id": 65
     }
   ],
   "movies-popular": [

@@ -17,15 +17,20 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule),
-    canActivate: [AuthGuard]
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard]
   },
   {
     path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule)
+    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule),
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard]
   },
   {
     path: 'userList',
-    loadChildren: () => import('./pages/user-list/user-list.module').then(m => m.UserListModule)
+    loadChildren: () => import('./pages/user-list/user-list.module').then(m => m.UserListModule),
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard]
   }
 ];
 

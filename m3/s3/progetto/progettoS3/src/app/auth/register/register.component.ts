@@ -18,12 +18,12 @@ export class RegisterComponent {
   ){}
 
   signUp(){
+
     this.authSvc.register(this.registerData)
     .subscribe(data => {
-
-      this.router.navigate(['/dashboard'])
-
+      this.router.navigate(['dashboard'])
     })
+
   }
 
 }
